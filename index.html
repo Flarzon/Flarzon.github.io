@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>V4scale</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src='./video/HTML5-Background-Video-master/jquery.backgroundvideo.min.js'></script>
 
     <link rel="stylesheet" href="/main.css">
     <link rel="SHORTCUT ICON" href="/images/favicon.ico" type="image/x-icon">
@@ -21,6 +22,21 @@
         </video>
     </div> -->
     <header id='headerNav' class='header'>
+        <!-- <script>
+            $(document).ready(function() {
+                var videobackground = new $.backgroundVideo($('section'), {
+                    "align": "centerXY",
+                    "width": 1280,
+                    "height": 720,
+                    "path": "video/",
+                    "filename": "Video",
+                    "types": ["mp4"],
+                    "preload": true,
+                    "autoplay": true,
+                    "loop": true,
+                });
+            });
+        </script> -->
         <a href="#" class='logo'><img src='/images/headerLogo.png' alt='Logo'></a>
         <input type='checkbox' id='menu-checkbox'>
         <nav role='navigation'>
@@ -36,6 +52,15 @@
     </header>
 
     <main class='homePage'>
+        <div class='homepage-hero-module'>
+            <div class='video-container'>
+                <div class='filter'></div>
+                <video autoplay loop class='fillWidth'>
+                            <source src='./video/Video.mp4' type='video/mp4' /> 123
+                            <source src='./video/Video.webm' type='video/mp4' /> 123
+                            </video>
+            </div>
+        </div>
         <div class='homeTextWrapper'>
             <div class='bigText'>
                 <div class='bigLine'>
@@ -60,7 +85,7 @@
         </div>
     </main>
 
-    <main class='secondPage'></main>
+    <section class='secondPage'></section>
 
 
 
