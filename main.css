@@ -312,12 +312,13 @@ body {
   width: 100%; }
 
 .video-container video {
-  position: absolute;
+  position: relative;
   z-index: 0;
   bottom: 0; }
 
 .video-container video.fillWidth {
-  width: 100%; }
+  width: 100vw;
+  height: 100vh; }
 
 @media screen and (min-width: 700px) and (max-width: 1024px) {
   .header .nav-item {
