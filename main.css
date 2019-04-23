@@ -396,3 +396,21 @@ body {
 @media screen and (min-width: 700px) and (max-width: 1024px) {
   .header .nav-item {
     font-size: 10px; } }
+
+@media screen and (max-width: 890px) {
+  .secondPage .expertisePictures {
+    width: 30%; }
+  .secondPage .expertiseText1 {
+    font-size: 0.8em; }
+  .secondPage .expertiseText2 {
+    font-size: 0.8em; }
+  .secondPage .expertiseText3 {
+    font-size: 0.8em; } }
+
+@media screen and (max-width: 500px) {
+  .secondPage .expertiseText1 {
+    font-size: 0.5em; }
+  .secondPage .expertiseText2 {
+    font-size: 0.5em; }
+  .secondPage .expertiseText3 {
+    font-size: 0.5em; } }
