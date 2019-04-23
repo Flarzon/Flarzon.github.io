@@ -116,8 +116,7 @@ body {
     color: #fff;
     text-decoration: none; }
   .header .nav-item:hover {
-    transform: scale(1.1);
-    transition: .2s ease-in-out; }
+    text-decoration: underline; }
   .header #menu-checkbox {
     display: none; }
   .header nav {
@@ -225,7 +224,75 @@ body {
 
 .secondPage {
   height: 100vh;
-  width: 100vw; }
+  width: 100vw;
+  background-color: #fceded; }
+  .secondPage .secondPageContainer {
+    display: flex;
+    flex-direction: column;
+    height: 100%; }
+  .secondPage .titleHeader {
+    margin-left: 20vh;
+    display: flex;
+    height: 15vh;
+    align-items: flex-end;
+    justify-content: flex-start;
+    text-transform: uppercase;
+    color: black;
+    font-family: 'Montserrat Italic'; }
+  .secondPage #titleHeaderLine {
+    padding-right: 2vh;
+    font-size: 2em;
+    display: flex;
+    color: #378ef0;
+    align-items: center;
+    height: 2.5rem; }
+  .secondPage .picturesContainer {
+    height: 85vh;
+    display: flex;
+    flex-direction: column; }
+  .secondPage .expertisePictures {
+    width: fit-content; }
+  .secondPage #ux-ui {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    left: 10vw;
+    width: 80%;
+    font-family: 'Montserrat Italic'; }
+  .secondPage #end-to-end {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    left: 13vw;
+    top: 143vh;
+    width: 80%;
+    font-family: 'Montserrat Italic'; }
+  .secondPage #extendedTeam {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    left: 16vw;
+    top: 167vh;
+    width: 80%;
+    font-family: 'Montserrat Italic'; }
+  .secondPage .expertiseText1 {
+    color: white;
+    height: 15vh;
+    display: flex;
+    background-color: #DB6868;
+    align-items: center; }
+  .secondPage .expertiseText2 {
+    color: white;
+    height: 15vh;
+    display: flex;
+    background-color: #D2946B;
+    align-items: center; }
+  .secondPage .expertiseText3 {
+    color: white;
+    height: 15vh;
+    display: flex;
+    background-color: #0FB3FE;
+    align-items: center; }
 
 @media screen and (max-width: 767px) {
   .header {

@@ -10,6 +10,7 @@
     <script src='./video/HTML5-Background-Video-master/jquery.backgroundvideo.min.js'></script>
 
     <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" href="animate.css">
     <link rel="SHORTCUT ICON" href="/images/favicon.ico" type="image/x-icon">
 </head>
 
@@ -56,7 +57,6 @@
                 <div class='filter'></div>
                 <video muted="" loop="" playsinline="" autoplay="true" preload="true"> 
                         <source src="./video/Video.mp4" media="only screen and (min-device-width: 568px)" type="video/mp4">
-                        <source src="./video/Video.mp4" media="only screen and (max-device-width: 568px)" type="video/mp4">
                       </video>
             </div>
         </div>
@@ -84,7 +84,32 @@
         </div>
     </main>
 
-    <section class='secondPage'></section>
+    <main class='secondPage'>
+        <div class='secondPageContainer'>
+            <h2 class='titleHeader'>
+                <span id='titleHeaderLine'>-</span> Our expertise
+            </h2>
+            <div class='picturesContainer'>
+                <div id='ux-ui' class='wow bounceInLeft'>
+                    <img class='expertisePictures' src='./images/UX-UI.png' alt='UX-UI'>
+                    <div class='expertiseText1'><span>
+                            Our UI/UX Architects and Designers will turn your idea into cutting edge digital product</span></div>
+                </div>
+                <div id='end-to-end' class='wow bounceInRight'>
+                    <img class='expertisePictures' src='./images/END TO END.png' alt='End-to-end development'>
+                    <div class='expertiseText2'>We provide a well structured mix of End-2-End product development including Project Management, UI/UX Design, Software Architecture, Backend, Frontend, Mobile development, DevOps and Customer Support services driven by your business
+                        needs.</span>
+                    </div>
+                </div>
+                <div id='extendedTeam' class='wow bounceInLeft'>
+                    <img class='expertisePictures' src='./images/Extended Team.png' alt='Extended Team'>
+                    <div class='expertiseText3'><span>V4Scale high-skilled engineers will scale up your team for faster and cost-effective product execution. Our developers are tightly integrated into our clients businesses, and may quickly become an invaluable acquisition asset.
+
+                        </span></div>
+                </div>
+            </div>
+        </div>
+    </main>
 
 
 
@@ -107,8 +132,11 @@
 
 
 
-    <script src="./script.js"></script>
-
+    <script src="./js/script.js"></script>
+    <script src="js/wow-js/dist/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 
 </body>
 
