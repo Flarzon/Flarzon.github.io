@@ -66,13 +66,15 @@
     opacity: 0; } }
 
 html {
-  background: #fff;
+  background-color: white;
   min-height: 100%;
   display: flex;
+  height: 100%;
   flex-direction: column; }
 
 body {
   margin: 0;
+  height: 100%;
   display: flex;
   flex-direction: column;
   flex: auto;
@@ -222,15 +224,14 @@ body {
     opacity: 0;
     -webkit-animation-delay: 6s; }
 
-.secondPage {
+.newPage {
   height: 100vh;
-  width: 100vw;
-  background-color: #fceded; }
-  .secondPage .secondPageContainer {
+  width: 100vw; }
+  .newPage .newPageContainer {
     display: flex;
     flex-direction: column;
     height: 100%; }
-  .secondPage .titleHeader {
+  .newPage .titleHeader {
     margin-left: 20vh;
     display: flex;
     height: 15vh;
@@ -239,27 +240,27 @@ body {
     text-transform: uppercase;
     color: black;
     font-family: 'Montserrat Italic'; }
-  .secondPage #titleHeaderLine {
+  .newPage #titleHeaderLine {
     padding-right: 2vh;
     font-size: 2em;
     display: flex;
     color: #378ef0;
     align-items: center;
     height: 2.5rem; }
-  .secondPage .picturesContainer {
+  .newPage .picturesContainer {
     height: 85vh;
     display: flex;
     flex-direction: column; }
-  .secondPage .expertisePictures {
+  .newPage .expertisePictures {
     width: fit-content; }
-  .secondPage #ux-ui {
+  .newPage #ux-ui {
     display: flex;
     position: absolute;
     align-items: center;
     left: 10vw;
     width: 80%;
     font-family: 'Montserrat Italic'; }
-  .secondPage #end-to-end {
+  .newPage #end-to-end {
     display: flex;
     position: absolute;
     align-items: center;
@@ -267,7 +268,7 @@ body {
     top: 143vh;
     width: 80%;
     font-family: 'Montserrat Italic'; }
-  .secondPage #extendedTeam {
+  .newPage #extendedTeam {
     display: flex;
     position: absolute;
     align-items: center;
@@ -275,19 +276,19 @@ body {
     top: 167vh;
     width: 80%;
     font-family: 'Montserrat Italic'; }
-  .secondPage .expertiseText1 {
+  .newPage .expertiseText1 {
     color: white;
     height: 15vh;
     display: flex;
     background-color: #DB6868;
     align-items: center; }
-  .secondPage .expertiseText2 {
+  .newPage .expertiseText2 {
     color: white;
     height: 15vh;
     display: flex;
     background-color: #D2946B;
     align-items: center; }
-  .secondPage .expertiseText3 {
+  .newPage .expertiseText3 {
     color: white;
     height: 15vh;
     display: flex;
@@ -398,19 +399,19 @@ body {
     font-size: 10px; } }
 
 @media screen and (max-width: 890px) {
-  .secondPage .expertisePictures {
+  .newPage .expertisePictures {
     width: 30%; }
-  .secondPage .expertiseText1 {
+  .newPage .expertiseText1 {
     font-size: 0.8em; }
-  .secondPage .expertiseText2 {
+  .newPage .expertiseText2 {
     font-size: 0.8em; }
-  .secondPage .expertiseText3 {
+  .newPage .expertiseText3 {
     font-size: 0.8em; } }
 
 @media screen and (max-width: 500px) {
-  .secondPage .expertiseText1 {
+  .newPage .expertiseText1 {
     font-size: 0.5em; }
-  .secondPage .expertiseText2 {
+  .newPage .expertiseText2 {
     font-size: 0.5em; }
-  .secondPage .expertiseText3 {
+  .newPage .expertiseText3 {
     font-size: 0.5em; } }
