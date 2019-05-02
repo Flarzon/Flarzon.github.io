@@ -82,7 +82,7 @@ body {
   display: flex;
   flex-direction: column;
   flex: auto;
-  overflow-x: hidden; }
+  overflow: hidden; }
 
 .bgVideo {
   display: block;
@@ -164,7 +164,7 @@ body {
     align-items: flex-start;
     top: -30%; }
   .homePage .bigLine {
-    padding-top: 20%;
+    padding-top: 35rem;
     width: 70%;
     min-height: 80px;
     margin-left: 70px;
@@ -410,9 +410,11 @@ body {
 
 @media screen and (min-width: 700px) and (max-width: 1024px) {
   .header .nav-item {
-    font-size: 10px; }
-  .homePage .homeTextWrapper {
-    top: -15%; } }
+    font-size: 10px; } }
+
+@media screen and (min-width: 1900px) {
+  .homePage .bigLine {
+    padding-top: 70%; } }
 
 @media screen and (max-width: 890px) {
   .newPage .expertisePictures {
@@ -431,3 +433,7 @@ body {
     font-size: 0.5em; }
   .newPage .expertiseText3 {
     font-size: 0.5em; } }
+
+@media screen and (max-width: 600px) {
+  .homePage .homeTextWrapper {
+    display: none; } }
