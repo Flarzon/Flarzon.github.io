@@ -370,15 +370,17 @@ body {
 .touch .video-container video {
   display: none; }
 
-video::-webkit-media-controls-start-playback-button {
-  display: none; }
-
-video {
-  pointer-events: none; }
+*::-webkit-media-controls-start-playback-button {
+  display: none !important;
+  -webkit-appearance: none; }
 
 .no-video .video-container .poster,
 .touch .video-container .poster {
   display: block !important; }
+
+*::-webkit-media-controls-start-playback-button {
+  display: none !important;
+  -webkit-appearance: none; }
 
 .video-container {
   position: relative;
