@@ -370,6 +370,12 @@ body {
 .touch .video-container video {
   display: none; }
 
+video::-webkit-media-controls-start-playback-button {
+  display: none; }
+
+video {
+  pointer-events: none; }
+
 .no-video .video-container .poster,
 .touch .video-container .poster {
   display: block !important; }
