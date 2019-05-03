@@ -163,9 +163,9 @@ body {
     flex-direction: column;
     align-items: flex-start;
     bottom: 5%;
+    left: 5%;
     width: 100%; }
   .homePage .bigLine {
-    padding-top: 35rem;
     width: 70%;
     min-height: 80px;
     margin-left: 70px;
@@ -179,8 +179,7 @@ body {
     margin-top: 5%; }
   .homePage .smallText {
     display: flex;
-    flex-direction: column;
-    margin-left: 70px; }
+    flex-direction: column; }
   .homePage .smallLine {
     color: white;
     min-height: 30px;
