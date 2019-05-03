@@ -406,7 +406,7 @@ body {
   z-index: 0;
   top: 50%;
   width: 100%;
-  object-fit: cover;
+  object-fit: fill;
   left: 50%;
   transform: translate(-50%, -50%);
   min-height: 100%;
