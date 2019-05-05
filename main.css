@@ -168,7 +168,6 @@ body {
   .homePage .bigLine {
     width: 70%;
     min-height: 80px;
-    margin-left: 70px;
     font-family: 'Montserrat Italic';
     font-size: 60%;
     display: flex; }
