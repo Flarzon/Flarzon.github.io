@@ -110,14 +110,12 @@ body {
   z-index: 1000;
   transition: 0.3s; }
   .header .logo {
-    font-weight: bold;
-    width: 20%;
-    height: 60px;
-    margin: 10px 0 0 20px;
-    display: flex;
-    flex: none;
-    justify-content: flex-start;
-    align-items: center; }
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 2% 0 0 2%; }
+  .header #logo {
+    width: 100%; }
   .header a {
     color: #fff;
     text-decoration: none; }
@@ -145,7 +143,8 @@ body {
     z-index: 999; }
 
 .nav-menu {
-  display: flex; }
+  display: flex;
+  margin-bottom: 10px; }
 
 .homePage {
   margin-top: 60px;
@@ -155,16 +154,18 @@ body {
   margin: auto;
   background-size: cover;
   background-repeat: no-repeat;
+  background-color: #25292F;
   flex: auto;
   box-sizing: border-box; }
   .homePage .homeTextWrapper {
     display: flex;
-    position: absolute;
+    position: relative;
     flex-direction: column;
     align-items: flex-start;
-    bottom: 5%;
+    bottom: 16%;
     left: 5%;
-    width: 100%; }
+    width: 90%;
+    font-size: 12px; }
   .homePage .bigLine {
     width: 70%;
     min-height: 80px;
@@ -192,17 +193,17 @@ body {
     width: 60%;
     margin-top: 1.5em; }
   .homePage .cityText {
-    color: #378ef0; }
+    color: #00A3DA; }
   .homePage .homeTitle {
     text-transform: capitalize;
     text-shadow: -1px -1px 10px rgba(0, 0, 0, 0.1);
     color: white;
-    font-weight: 1500;
+    font-weight: 900;
     height: auto;
     width: 100%;
     display: block;
     margin: .3em 0;
-    font-size: 50px;
+    font-size: 30px;
     box-sizing: border-box; }
   .homePage .verticalSlider {
     display: inline;
@@ -211,11 +212,12 @@ body {
     animation: textAnimation 9s linear infinite 0s;
     -ms-animation: textAnimation 9s linear infinite 0s;
     -webkit-animation: textAnimation 9s linear infinite 0s;
-    color: #378ef0;
+    color: #00A3DA;
     overflow: hidden;
     opacity: 0;
     position: absolute;
-    font-weight: 700 !important; }
+    font-weight: 700 !important;
+    text-transform: uppercase; }
   .homePage .verticalSlider span:nth-child(2) {
     animation-delay: 3s;
     -ms-animation-delay: 3s;
@@ -248,7 +250,7 @@ body {
     padding-right: 2vh;
     font-size: 2em;
     display: flex;
-    color: #378ef0;
+    color: #00A3DA;
     align-items: center;
     height: 2.5rem; }
   .newPage .picturesContainer {
@@ -296,7 +298,7 @@ body {
     font-weight: 700;
     height: 10%;
     font-size: 2em;
-    color: #378ef0; }
+    color: #00A3DA; }
   .newPage .expertiseContainer {
     overflow: hidden; }
   .newPage .expertiseText {
@@ -385,8 +387,8 @@ body {
   position: relative;
   bottom: 0%;
   left: 0%;
-  height: 100vh;
-  background: #000; }
+  height: 80vh;
+  background: #25292F; }
 
 .element-with-video-bg .poster img {
   width: 100%;
@@ -396,18 +398,18 @@ body {
 .element-with-video-bg .filter {
   z-index: 100;
   position: absolute;
-  background: rbga(0, 0, 0, 0.4);
+  background: #25292F;
   width: 100%; }
 
 .element-with-video-bg video {
   position: absolute;
   z-index: 0;
-  top: 50%;
+  top: 65%;
+  height: auto;
   width: 100%;
-  object-fit: fill;
+  object-fit: contain;
   left: 50%;
   transform: translate(-50%, -50%);
-  min-height: 100%;
   min-width: 100%; }
 
 .element-with-video-bg video.fillWidth {
@@ -440,8 +442,10 @@ body {
   .newPage .expertiseText3 {
     font-size: 0.5em; } }
 
-@media screen and (max-width: 600px) {
-  .homePage .smallText {
-    display: none; }
-  .homePage .bigLine {
-    margin-left: 20px; } }
+@media screen and (max-width: 700px) {
+  .element-with-video-bg video {
+    top: 40%; }
+  .homePage .homeTextWrapper {
+    bottom: 30%; }
+  .homePage .smallLine {
+    width: 70%; } }
