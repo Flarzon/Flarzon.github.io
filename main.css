@@ -115,7 +115,7 @@ body {
     height: auto;
     margin: 2% 0 0 2%; }
   .header #logo {
-    width: 100%; }
+    width: 80%; }
   .header a {
     color: #fff;
     text-decoration: none; }
@@ -163,7 +163,7 @@ body {
     flex-direction: column;
     align-items: flex-start;
     bottom: 16%;
-    left: 5%;
+    left: 2%;
     width: 90%;
     font-size: 12px; }
   .homePage .bigLine {
@@ -449,3 +449,7 @@ body {
     bottom: 30%; }
   .homePage .smallLine {
     width: 70%; } }
+
+@media screen and (max-width: 765px) and (min-width: 550px) {
+  .header #logo {
+    width: 50%; } }
