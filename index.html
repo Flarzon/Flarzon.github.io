@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>V4scale.</title>
+    <title>V4scale</title>
 
     <!-- <link rel="stylesheet" type="text/css" href="/node_modules/jquery-background-video/jquery.background-video.css"> -->
     <link rel="stylesheet" href="/main.css">
@@ -16,6 +16,38 @@
 
 
 <body>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+
+    <!--<div class="loader">-->
+    <!--	<div class="loader-inner">-->
+    <!--		<div class="loader-line-wrap">-->
+    <!--			<div class="loader-line"></div>-->
+    <!--		</div>-->
+    <!--		<div class="loader-line-wrap">-->
+    <!--			<div class="loader-line"></div>-->
+    <!--		</div>-->
+    <!--		<div class="loader-line-wrap">-->
+    <!--			<div class="loader-line"></div>-->
+    <!--		</div>-->
+    <!--		<div class="loader-line-wrap">-->
+    <!--			<div class="loader-line"></div>-->
+    <!--		</div>-->
+    <!--		<div class="loader-line-wrap">-->
+    <!--			<div class="loader-line"></div>-->
+    <!--		</div>-->
+    <!--	</div>-->
+    <!--</div>-->
+
+
+    <div class="loaderArea">
+        <div class="circle-border">
+            <div class="circle-core"></div>
+        </div>
+    </div>
+
+
+
     <header id='headerNav' class='header'>
         <a href="#" class='logo'><img id='logo' src='/images/resizedLogo2.png' alt='Logo'></a>
         <input type='checkbox' id='menu-checkbox'>
@@ -35,8 +67,8 @@
         <div class='homepage-hero-module'>
             <div class='element-with-video-bg jquery-background-video-wrapper'>
                 <video class="my-background-video jquery-background-video" muted="" loop=" " playsinline=" " autoplay="true " preload="true "> 
-                        <source src="./video/movie.mp4 "  type="video/mp4 ">
-                        <source src="./video/movie.webm" type="video/webm">
+                        <source src="./video/smallMovie4.mp4 "  type="video/mp4 ">
+                        <!--<source src="./video/movie.webm" type="video/webm">-->
                         <source src="./video/adaptedVideo.mp4 " media="only screen and (max-device-width: 568px)" type="video/mp4 ">
                       </video>
             </div>
@@ -45,7 +77,7 @@
             <div class='bigText'>
                 <div class='bigLine'>
                     <h1 class='homeTitle'>Scale Up Your
-                        <div class='homeTitle'>Company
+                        <div class='homeTitle'>Product
                             <div class='verticalSlider'>
                                 <span>Design</span>
                                 <span>Development</span>
@@ -64,53 +96,12 @@
     </main>
 
 
-    <!-- <main class='newPage'>
+    <main class='newPage'>
         <div class='newPageContainer'>
             <h2 class='titleHeader'>
                 <span id='titleHeaderLine'>-</span> Scale Up Your Product
             </h2>
-            <div class='picturesContainer'>
 
-                <div id='ux-ui' class='wow fadeInUp expertisePicture'>
-                    <div class='expertiseContainer'>
-                        <div class='blockTextHeader'>
-                            <span>UX/UI</span>
-                        </div>
-                        <span class='expertiseText'> Our UI/UX Architects and Designers will turn your idea into cutting edge digital product</span>
-                        <div class='expertiseSmallPicture'>
-                            <img src='http://placehold.it/350x40'>
-                        </div>
-                    </div>
-                </div>
-
-                <div id='end-to-end' class='wow fadeInDown expertisePicture'>
-                    <div class='expertiseContainer'>
-                        <div class='blockTextHeader'>
-                            <span>End-to-End</span>
-                        </div>
-                        <span class='expertiseText'>We provide a well structured mix of End-2-End product development including Project Management, UI/UX Design, Software Architecture, Backend, Frontend, Mobile development, DevOps and Customer Support services driven by your business
-                        needs.
-                        </span>
-                        <div class='expertiseSmallPicture'>
-                            <img src='http://placehold.it/350x40'>
-                        </div>
-                    </div>
-                </div>
-
-                <div id='extendedTeam' class='wow fadeInUp expertisePicture'>
-                    <div class='expertiseContainer'>
-                        <div class='blockTextHeader'>
-                            <span>Extended Team</span>
-                        </div>
-                        <span class='expertiseText'>V4Scale high-skilled engineers will scale up your team for faster and cost-effective product execution. Our developers are tightly integrated into our clients businesses, and may quickly become an invaluable acquisition asset.
-                        </span>
-                        <div class='expertiseSmallPicture'>
-                            <img src='http://placehold.it/350x40'>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
         </div>
     </main>
 
@@ -123,7 +114,6 @@
         </div>
     </main>
 
- -->
 
 
 
@@ -142,8 +132,7 @@
 
 
 
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js "></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js "></script>
     <!-- <script src="/node_modules/jquery-background-video/jquery.background-video.js "></script> -->
     <script src="./js/script.js "></script>
     <script src="jquery.mCustomScrollbar.concat.min.js "></script>
@@ -151,6 +140,7 @@
     <script>
         new WOW().init();
     </script>
+    <script src="./script.js "></script>
 
 
 </body>
