@@ -128,8 +128,7 @@ body {
   height: 100%;
   display: flex;
   flex-direction: column;
-  flex: auto;
-  /*overflow: hidden;*/ }
+  flex: auto; }
 
 .bgVideo {
   display: block;
@@ -224,11 +223,6 @@ body {
   align-items: center;
   justify-content: center; }
 
-/*position:absolute;*/
-/*top:50%;*/
-/*left:50%;*/
-/*width:200px;*/
-/*height:200px;*/
 .circle-border {
   width: 150px;
   height: 150px;
@@ -263,39 +257,6 @@ body {
   background-color: #25292F;
   border-radius: 50%; }
 
-/*.loader:before,*/
-/*.loader:after {*/
-/*  content: "";*/
-/*  height: 40px;*/
-/*  width: 40px;*/
-/*  border: 8px solid rgba(255,255,255,.5);*/
-/*  border-radius: 10px;*/
-/*  position: absolute;*/
-/*  top: 50%;*/
-/*  left:50%;*/
-/*}*/
-/*.loader:before {*/
-/*  animation: animate 2s infinite linear;*/
-/*}*/
-/*@keyframes animate {*/
-/*  0% {*/
-/*    transform: rotate(0) skew(0);*/
-/*  }*/
-/*  100% {*/
-/*    transform: rotate(180deg) skew(360deg);*/
-/*  }*/
-/*}*/
-/*.loader:after {*/
-/*  animation: animate2 2s infinite linear;*/
-/*}*/
-/*@keyframes animate2 {*/
-/*  0% {*/
-/*    transform: rotate(0) skew(0);*/
-/*  }*/
-/*  100% {*/
-/*    transform: rotate(-180deg) skew(-360deg);*/
-/*  }*/
-/*}*/
 .homePage {
   margin-top: 60px;
   width: 100vw;
