@@ -19,6 +19,12 @@ mywindow.scroll(function() {
 
     prevScroll = newscroll;
 });
+$(window).on('load', function() {
+    $preloader = $('.loaderArea'),
+        $loader = $preloader.find('.circle-border');
+    $loader.fadeOut();
+    $preloader.delay(350).fadeOut('slow');
+});
 
 // $(document).ready(function() {
 

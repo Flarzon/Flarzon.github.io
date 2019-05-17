@@ -128,7 +128,8 @@ body {
   height: 100%;
   display: flex;
   flex-direction: column;
-  flex: auto; }
+  flex: auto;
+  overflow-x: hidden; }
 
 .bgVideo {
   display: block;
@@ -161,7 +162,7 @@ body {
   display: block;
   max-width: 100%;
   height: auto;
-  margin: 2% 0 0 2%; }
+  margin: 10px 0 5px 2rem; }
 
 .header #logo {
   width: 80%; }
@@ -207,6 +208,18 @@ body {
 .nav-menu {
   display: flex;
   margin-bottom: 10px; }
+
+.clientsSlider {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center; }
+
+.clientsSlider h4 {
+  padding: 0 8px;
+  font-size: 18px;
+  display: inline-block;
+  color: #f5e10a;
+  margin-bottom: 30px; }
 
 .loaderArea {
   background: #25292F;
