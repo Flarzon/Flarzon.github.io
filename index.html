@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>V4scale</title>
 
@@ -31,10 +31,31 @@
 
 
     <header id='headerNav' class='header'>
+        <div class="menu">
+            <nav class="menu__nav">
+                <ul class="r-list menu__list">
+                    <li class="menu__group">
+                        <a href="#0" class="r-link menu__link">Our expertise</a>
+                    </li>
+                    <li class="menu__group">
+                        <a href="#0" class="r-link menu__link">Team extension</a>
+                    </li>
+                    <li class="menu__group">
+                        <a href="#0" class="r-link menu__link">Your success</a>
+                    </li>
+                    <li class="menu__group">
+                        <a href="#0" class="r-link menu__link">Contact us</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="hamburger">
+                <button class="r-button hamburger__button menu__toggle">
+                            <span class="hamburger__label">Open menu</span>
+                          </button>
+            </div>
+        </div>
         <a href="#" class='logo'><img id='logo' src='/images/resizedLogo2.png' alt='Logo'></a>
-        <input type='checkbox' id='menu-checkbox'>
         <nav role='navigation'>
-            <label for='menu-checkbox' class='toggle-button' data-open='MENU' data-close='CLOSE' onclick></label>
             <div class='nav-menu'>
                 <a href='#' class='nav-item'>Our expertise</a>
                 <a href='#' class='nav-item'>Team extension</a>

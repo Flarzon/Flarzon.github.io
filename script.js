@@ -49,6 +49,34 @@ $(document).ready(function() {
     });
 });
 
+(function() {
+    'use strict';
+
+    class Menu {
+        constructor(settings) {
+            this.menuNode = settings.menuNode;
+        }
+
+        toggleMenuState(className) {
+            if (typeof className !== 'string' || className.length === 0) {
+                return console.log('you did not give the class name for the toggleState function');
+            }
+            return this.menuNode.classList.toggle(className);
+        }
+    }
+
+    const jsMenuNode = document.querySelector('.menu');
+    const demoMenu = new Menu({
+        menuNode: jsMenuNode
+    });
+
+    function callMenuToggle() {
+        demoMenu.toggleMenuState('menu_activated');
+    }
+
+    jsMenuNode.querySelector('.menu__toggle').addEventListener('click', callMenuToggle);
+})();
+
 // $(document).ready(function() {
 
 //     // Resive video
