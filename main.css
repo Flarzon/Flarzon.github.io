@@ -835,7 +835,16 @@ LEVEL 4. SETTINGS
 
 @media screen and (min-width: 1900px) {
   .homePage .homeTextWrapper {
-    font-size: 18px; } }
+    font-size: 18px; }
+  .secondPageTopBlock {
+    font-size: 3rem; }
+  .secondPageRightBottomBlock {
+    font-size: 3rem; }
+  .secondPageTopBlock {
+    background-size: 540px 580px; }
+  .secondPageBottomBlock {
+    background-size: 540px 580px;
+    background-position: 100% 50%; } }
 
 @media screen and (max-width: 700px) {
   .element-with-video-bg video {
