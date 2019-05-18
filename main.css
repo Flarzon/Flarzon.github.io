@@ -671,7 +671,7 @@ LEVEL 4. SETTINGS
   background-color: #F3F3F3;
   width: 83%;
   background-image: url("/images/number3.png");
-  background-position: 60% 100%;
+  background-position: 100% 0%;
   background-repeat: no-repeat;
   display: flex; }
 
@@ -724,7 +724,7 @@ LEVEL 4. SETTINGS
   .secondPageTopBlock {
     background-size: 120px 140px; }
   .secondPageBottomBlock {
-    background-size: 200px 200px; } }
+    background-size: 120px 140px; } }
 
 @media screen and (max-width: 767px) {
   .header {
