@@ -1,20 +1,31 @@
 var mywindow = $(window);
 var prevScroll = mywindow.scrollTop();
 var newscroll;
+var scrolledToBottom;
 
 mywindow.scroll(function() {
     newscroll = mywindow.scrollTop();
+    scrolledToBottom = $(document).height() - $(window).height() - $(window).scrollTop();
 
     if (newscroll > prevScroll) {
         $('.header').addClass('headerFade')
+        $('.clientsSliderContainer').addClass('clientsSliderShow')
+        $('.clientsSliderContainer').removeClass('clientsSliderFade')
     } else {
+
         $('.header').removeClass('headerFade')
+        $('.clientsSliderContainer').addClass('clientsSliderFade')
     }
 
     if (newscroll > 100) {
         $('.header').addClass('headerScrolled')
     } else {
         $('.header').removeClass('headerScrolled')
+    }
+
+    if (scrolledToBottom < 100) {
+        $('.clientsSliderContainer').addClass('clientsSliderFade')
+
     }
 
     prevScroll = newscroll;
@@ -24,6 +35,18 @@ $(window).on('load', function() {
         $loader = $preloader.find('.circle-border');
     $loader.fadeOut();
     $preloader.delay(350).fadeOut('slow');
+});
+
+$(document).ready(function() {
+    $("#clientsSlider").flexisel({
+        visibleItems: 3,
+        itemsToScroll: 1,
+        autoPlay: {
+            enable: true,
+            interval: 5000,
+            pauseOnHover: true
+        }
+    });
 });
 
 // $(document).ready(function() {

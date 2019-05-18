@@ -209,16 +209,30 @@ body {
   display: flex;
   margin-bottom: 10px; }
 
-.clientsSlider {
-  width: 90%;
-  margin: 0 auto;
-  text-align: center; }
+.clientsSliderContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 10;
+  height: 10%;
+  visibility: hidden;
+  transition: 0.3s; }
+
+.clientsSliderFade {
+  opacity: 0;
+  transform: translateY(100%); }
+
+.clientsSliderShow {
+  visibility: visible; }
 
 .clientsSlider h4 {
   padding: 0 8px;
   font-size: 18px;
   display: inline-block;
-  color: #f5e10a;
+  color: black;
   margin-bottom: 30px; }
 
 .loaderArea {
