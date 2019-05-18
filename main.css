@@ -254,7 +254,7 @@ LEVEL 2. MENU STYLES
   position: relative;
   text-indent: -9999px;
   z-index: 2;
-  transform: translateY(50%); }
+  transform: translateY(45%); }
 
 .hamburger__button:before,
 .hamburger__button:after,
