@@ -116,15 +116,7 @@
     opacity: 0; } }
 
 html {
-  background-color: #e3e3e3;
-  /* IE9, iOS 3.2+ */
-  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxsaW5lYXJHcmFkaWVudCBpZD0idnNnZyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMCUiIHkyPSIxMDAlIj48c3RvcCBzdG9wLWNvbG9yPSIjZTJlMmUyIiBzdG9wLW9wYWNpdHk9IjEiIG9mZnNldD0iMCIvPjxzdG9wIHN0b3AtY29sb3I9IiNkYmRiZGIiIHN0b3Atb3BhY2l0eT0iMSIgb2Zmc2V0PSIwLjUiLz48c3RvcCBzdG9wLWNvbG9yPSIjZDFkMWQxIiBzdG9wLW9wYWNpdHk9IjEiIG9mZnNldD0iMC41MSIvPjxzdG9wIHN0b3AtY29sb3I9IiNmZWZlZmUiIHN0b3Atb3BhY2l0eT0iMSIgb2Zmc2V0PSIxIi8+PC9saW5lYXJHcmFkaWVudD48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI3ZzZ2cpIiAvPjwvc3ZnPg==);
-  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0, #e2e2e2), color-stop(0.5, #dbdbdb), color-stop(0.51, #d1d1d1), color-stop(1, #fefefe));
-  /* Android 2.3 */
-  background-image: -webkit-repeating-linear-gradient(top, #ececec 0%, #f0eeee 50%, #e8e7e7 51%, #fefefe 100%);
-  /* IE10+ */
-  background-image: repeating-linear-gradient(to bottom, #ececec 0%, #f0eeee 50%, #e8e7e7 51%, #fefefe 100%);
-  background-image: -ms-repeating-linear-gradient(top, #ececec 0%, #f0eeee 50%, #e8e7e7 51%, #fefefe 100%); }
+  background-color: white; }
 
 body {
   margin: 0;
@@ -175,7 +167,7 @@ body {
   text-decoration: none; }
 
 .header .nav-item:hover {
-  /*text-decoration: underline #00A3DA;*/
+  /*text-decoration: underline $blueColor;*/
   border-bottom: 2px solid #00A3DA; }
 
 .header #logo:hover {
@@ -486,13 +478,13 @@ LEVEL 4. SETTINGS
   margin-top: 60px;
   width: 100vw;
   height: 100vh;
-  min-width: 430px;
   margin: auto;
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #25292F;
   flex: auto;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  margin-bottom: 5vh; }
 
 .homePage .homeTextWrapper {
   display: flex;
@@ -556,9 +548,9 @@ LEVEL 4. SETTINGS
   text-indent: 12px; }
 
 .homePage .verticalSlider span {
-  animation: textAnimation 9s linear infinite 0s;
-  -ms-animation: textAnimation 9s linear infinite 0s;
-  -webkit-animation: textAnimation 9s linear infinite 0s;
+  animation: textAnimation 15s linear infinite 0s;
+  -ms-animation: textAnimation 15s linear infinite 0s;
+  -webkit-animation: textAnimation 15s linear infinite 0s;
   color: #00A3DA;
   overflow: hidden;
   opacity: 0;
@@ -567,16 +559,16 @@ LEVEL 4. SETTINGS
   text-transform: uppercase; }
 
 .homePage .verticalSlider span:nth-child(2) {
-  animation-delay: 3s;
-  -ms-animation-delay: 3s;
+  animation-delay: 5s;
+  -ms-animation-delay: 5s;
   opacity: 0;
-  -webkit-animation-delay: 3s; }
+  -webkit-animation-delay: 5s; }
 
 .homePage .verticalSlider span:nth-child(3) {
-  animation-delay: 6s;
-  -ms-animation-delay: 6s;
+  animation-delay: 10s;
+  -ms-animation-delay: 10s;
   opacity: 0;
-  -webkit-animation-delay: 6s; }
+  -webkit-animation-delay: 10s; }
 
 #before-load {
   position: fixed;
@@ -607,13 +599,103 @@ LEVEL 4. SETTINGS
   margin: -35px 0 0 -35px; }
 
 .newPage {
-  height: 100vh;
   width: 100vw; }
 
 .newPage .newPageContainer {
   display: flex;
   flex-direction: column;
-  height: 100%; }
+  height: 100vh; }
+
+#secondPage {
+  height: 150vh; }
+
+.secondPageTopBlocksContainer {
+  display: flex;
+  height: 85vh;
+  display: flex;
+  justify-content: center; }
+
+.secondPageTopBlock {
+  background-color: #F3F3F3;
+  margin: 15px;
+  width: 40vw;
+  background-image: url("/images/number1.png");
+  background-repeat: no-repeat;
+  background-position: 100% 60%;
+  display: flex;
+  flex-direction: column; }
+
+.secondPageTopBlock:nth-child(2) {
+  background-image: url("/images/number2.png");
+  background-position: 0 60%; }
+
+.secondPageTopBlockPicture {
+  height: 40%;
+  background-size: cover;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.secondPageLeftPicture {
+  width: 90%;
+  height: 80%; }
+
+.secondPageRightPicture {
+  position: relative;
+  height: 100%;
+  width: 150%; }
+
+#secondpageBlockTitle {
+  color: #00A3DA;
+  position: relative;
+  left: 5%;
+  height: 10%;
+  text-overflow: ellipsis; }
+
+.secondPageTopBlockText {
+  font-family: 'Montserrat Italic';
+  height: 50%;
+  width: 90%;
+  line-height: 2.5;
+  position: relative;
+  left: 5%; }
+
+.secondPageBottomBlockContainer {
+  height: 40%;
+  width: 100%;
+  display: flex;
+  justify-content: center; }
+
+.secondPageBottomBlock {
+  background-color: #F3F3F3;
+  width: 83%;
+  background-image: url("/images/number3.png");
+  background-position: 60% 100%;
+  background-repeat: no-repeat;
+  display: flex; }
+
+.secondPageBottomBlockPicture {
+  width: 60%;
+  background-size: cover;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.secondPageBottomPicture {
+  width: 100%;
+  height: 80%;
+  padding-left: 5%; }
+
+.secondPageRightBottomBlock {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column; }
+
+#thirdPage {
+  height: 100vh; }
 
 .newPage .titleHeader {
   margin-left: 20vh;
@@ -638,7 +720,11 @@ LEVEL 4. SETTINGS
   .nav-menu {
     display: none; }
   .hamburger {
-    visibility: visible; } }
+    visibility: visible; }
+  .secondPageTopBlock {
+    background-size: 120px 140px; }
+  .secondPageBottomBlock {
+    background-size: 200px 200px; } }
 
 @media screen and (max-width: 767px) {
   .header {
@@ -757,8 +843,40 @@ LEVEL 4. SETTINGS
   .homePage .homeTextWrapper {
     bottom: 30%; }
   .homePage .smallLine {
-    width: 70%; } }
+    width: 70%; }
+  .newPage .titleHeader {
+    margin-left: 5px; } }
 
 @media screen and (max-width: 765px) and (min-width: 550px) {
   .header #logo {
     width: 50%; } }
+
+@media screen and (max-width: 540px) {
+  .secondPageTopBlock,
+  .secondPageRightBottomBlock {
+    font-size: 60%; }
+  .secondPageTopBlockText {
+    line-height: 3; }
+  .secondPageBottomBlock {
+    flex-direction: column; }
+  .secondPageRightBottomBlock {
+    width: 100%; } }
+
+.secondPageBottomBlockPicture {
+  width: 100%; }
+
+@media screen and (max-height: 568px) {
+  .secondPageTopBlock {
+    font-size: 60%; }
+  .secondPageTopBlockText {
+    line-height: 3; }
+  .secondPageRightBottomBlock {
+    font-size: 60%; }
+  .homePage .homeTextWrapper {
+    font-size: 60%; }
+  .bigText {
+    padding-top: 5%; }
+  .homePage .homeTitle {
+    font-size: 20px; }
+  .homePage .smallLine2 {
+    visibility: hidden; } }
