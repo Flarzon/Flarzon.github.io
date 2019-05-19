@@ -126,6 +126,9 @@ body {
   flex: auto;
   overflow-x: hidden; }
 
+.menuOpen {
+  overflow: hidden; }
+
 .bgVideo {
   display: block;
   width: 100%;
@@ -218,7 +221,6 @@ LEVEL 2. MENU STYLES
 /* hamburger */
 .hamburger {
   width: 1em;
-  height: .5em;
   font-size: var(--uiMenuCircleSize);
   flex: none;
   position: absolute;
@@ -246,7 +248,7 @@ LEVEL 2. MENU STYLES
   position: relative;
   text-indent: -9999px;
   z-index: 2;
-  transform: translateY(45%); }
+  transform: translateY(50%); }
 
 .hamburger__button:before,
 .hamburger__button:after,
@@ -356,9 +358,6 @@ body {
   font-size: 3.2rem;
   text-transform: capitalize;
   font-family: 'Montserrat Italic'; }
-
-.menu__group:hover {
-  border-bottom: 2px solid var(--colorWhite); }
 
 /*
 =====
@@ -607,18 +606,17 @@ LEVEL 4. SETTINGS
   height: 100vh; }
 
 #secondPage {
-  height: 150vh; }
+  height: 100vh; }
 
 .secondPageTopBlocksContainer {
   display: flex;
   height: 85vh;
-  display: flex;
-  justify-content: center; }
+  display: flex; }
 
 .secondPageTopBlock {
   background-color: #F3F3F3;
-  margin: 15px;
-  width: 40vw;
+  margin: 0 1% 0 0;
+  width: 49vw;
   background-image: url("/images/number1.png");
   background-repeat: no-repeat;
   background-position: 100% 60%;
@@ -627,7 +625,8 @@ LEVEL 4. SETTINGS
 
 .secondPageTopBlock:nth-child(2) {
   background-image: url("/images/number2.png");
-  background-position: 0 60%; }
+  background-position: 0 60%;
+  margin: 0 0 0 1%; }
 
 .secondPageTopBlockPicture {
   height: 40%;
@@ -643,7 +642,7 @@ LEVEL 4. SETTINGS
 
 .secondPageRightPicture {
   position: relative;
-  height: 100%;
+  height: 150%;
   width: 150%; }
 
 #secondpageBlockTitle {
@@ -693,6 +692,9 @@ LEVEL 4. SETTINGS
   display: flex;
   justify-content: center;
   flex-direction: column; }
+
+#navigation {
+  background-color: wheat; }
 
 #thirdPage {
   height: 100vh; }

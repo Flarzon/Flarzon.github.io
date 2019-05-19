@@ -72,6 +72,8 @@ $(document).ready(function() {
 
     function callMenuToggle() {
         demoMenu.toggleMenuState('menu_activated');
+        document.body.classList.toggle('menuOpen');
+
     }
 
     jsMenuNode.querySelector('.menu__toggle').addEventListener('click', callMenuToggle);
