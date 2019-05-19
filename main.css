@@ -615,21 +615,21 @@ LEVEL 4. SETTINGS
 
 .secondPageTopBlock {
   background-color: #F3F3F3;
-  margin: 0 1% 0 0;
   width: 49vw;
   background-image: url("/images/number1.png");
   background-repeat: no-repeat;
-  background-position: 100% 60%;
+  background-position: 100% 100%;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  margin: 0 2vw 0 2vw; }
 
 .secondPageTopBlock:nth-child(2) {
   background-image: url("/images/number2.png");
-  background-position: 0 60%;
-  margin: 0 0 0 1%; }
+  background-position: 0 100%;
+  margin: 0 2vw 0 0; }
 
 .secondPageTopBlockPicture {
-  height: 40%;
+  height: 60%;
   background-size: cover;
   overflow: hidden;
   display: flex;
@@ -643,7 +643,8 @@ LEVEL 4. SETTINGS
 .secondPageRightPicture {
   position: relative;
   height: 150%;
-  width: 150%; }
+  width: 150%;
+  padding-right: 10%; }
 
 #secondpageBlockTitle {
   color: #00A3DA;
@@ -654,7 +655,7 @@ LEVEL 4. SETTINGS
 
 .secondPageTopBlockText {
   font-family: 'Montserrat Italic';
-  height: 50%;
+  height: 30%;
   width: 90%;
   line-height: 2.5;
   position: relative;
@@ -693,11 +694,86 @@ LEVEL 4. SETTINGS
   justify-content: center;
   flex-direction: column; }
 
-#navigation {
-  background-color: wheat; }
-
 #thirdPage {
   height: 100vh; }
+
+.thirdPageContainer {
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.thirdPageBackground {
+  height: 85vh;
+  background-color: #F3F3F3; }
+
+.cardContainer {
+  display: flex;
+  width: 80%; }
+
+.card1 {
+  margin-left: -8%;
+  top: -50%;
+  transition: .3s; }
+
+.card2 {
+  margin-left: 30%;
+  transition: .3s; }
+
+.card3 {
+  margin-left: 30%; }
+
+.card4 {
+  margin-left: 30%;
+  transition: .3s; }
+
+.card1:hover,
+.card2:hover,
+.card4:hover {
+  transform: scale(1.1); }
+
+.card-inner {
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); }
+
+.card-front,
+.card-back {
+  position: absolute;
+  transition: .3s;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden; }
+
+.card-front {
+  background-color: #bbb;
+  color: black;
+  z-index: 2; }
+
+.card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+  z-index: 1; }
+
+.card:active {
+  margin-left: 1px 1px 0;
+  box-shadow: -1px -1px 1px #000;
+  outline: 1px solid black;
+  -moz-outline-radius: 5px;
+  background-image: linear-gradient(to top, #f4f5f5, #dfdddd); }
+
+#card1Control:checked + label .card-inner,
+#card2Control:checked + label .card-inner,
+#card4Control:checked + label .card-inner {
+  transform: rotateY(180deg);
+  transition: transform 0.6s;
+  transform-style: preserve-3d; }
+
+#card1Control,
+#card2Control,
+#card4Control {
+  display: none; }
 
 .newPage .titleHeader {
   margin-left: 20vh;
@@ -891,3 +967,27 @@ LEVEL 4. SETTINGS
     font-size: 20px; }
   .homePage .smallLine2 {
     visibility: hidden; } }
+
+@media screen and (max-width: 768px) {
+  .secondPageTopBlocksContainer {
+    flex-direction: column;
+    align-items: center; }
+  .secondPageTopBlock {
+    width: 90%;
+    height: 40vh;
+    font-size: 50%;
+    margin: 0 0 5% 0; }
+  .secondPageTopBlock:nth-child(2) {
+    margin: 0; }
+  .card1Picture {
+    width: 40vw;
+    transform: translatey(-30%); }
+  .card2Picture {
+    width: 40vw;
+    transform: translate(70%, -30%); }
+  .card3Picture {
+    width: 40vw;
+    transform: translate(-120%, 70%); }
+  .card4Picture {
+    width: 40vw;
+    transform: translate(-50%, 70%); } }
