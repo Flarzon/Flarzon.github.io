@@ -1204,7 +1204,7 @@ LEVEL 4. SETTINGS
   .thirdPageTextBlock {
     position: relative;
     font-size: 0.9rem;
-    transform: translatey(400%); } }
+    top: 60%; } }
 
 @media screen and (max-width: 320px) {
   .thirdPageTextBlock {
