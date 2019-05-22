@@ -1199,8 +1199,9 @@ LEVEL 4. SETTINGS
   .secondPageTabletGrid {
     font-size: 0.9rem; }
   .thirdPageTextBlock {
-    transform: translate(0, 450%);
-    font-size: 0.9rem; } }
+    position: relative;
+    font-size: 0.9rem;
+    bottom: -30%; } }
 
 @media screen and (max-width: 320px) {
   .thirdPageTextBlock {
