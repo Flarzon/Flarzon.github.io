@@ -2,6 +2,7 @@
 @import 'https://stas-melnikov.ru/r-blocks/r-button.css';
 @import 'https://stas-melnikov.ru/r-blocks/r-link.css';
 @import 'https://stas-melnikov.ru/r-blocks/r-list.css';
+@import url("https://fonts.googleapis.com/css?family=Just+Another+Hand");
 @font-face {
   font-family: 'Montserrat Italic';
   src: url("Montserrat-Italic.eot");
@@ -805,6 +806,162 @@ LEVEL 4. SETTINGS
   color: #00A3DA;
   align-items: center;
   height: 2.5rem; }
+
+.containerS {
+  margin: 0 auto;
+  margin-top: 20px;
+  position: relative;
+  width: 80%;
+  height: 0;
+  padding-bottom: 50%;
+  user-select: none;
+  background-color: #1c1c1c;
+  box-shadow: 0 11px 22px rgba(0, 0, 0, 0.2), 0 7px 7px rgba(0, 0, 0, 0.24); }
+  .containerS input {
+    display: none; }
+  .containerS .slide_img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1; }
+    .containerS .slide_img img {
+      width: inherit;
+      height: inherit; }
+    .containerS .slide_img .prevS,
+    .containerS .slide_img .nextS {
+      width: 8%;
+      height: inherit;
+      position: absolute;
+      top: 0;
+      background-color: rgba(243, 243, 243, 0.1);
+      z-index: 99;
+      transition: .45s;
+      cursor: pointer;
+      text-align: center; }
+    .containerS .slide_img .nextS {
+      right: 0; }
+    .containerS .slide_img .prevS {
+      left: 0; }
+    .containerS .slide_img .prevS:hover,
+    .containerS .slide_img .nextS:hover {
+      transition: .3s;
+      background-color: rgba(243, 243, 243, 0.4); }
+    .containerS .slide_img .prevS span,
+    .containerS .slide_img .nextS span {
+      position: absolute;
+      width: 0px;
+      height: 0px;
+      border: solid 20px;
+      top: 50%;
+      transform: translateY(-50%); }
+    .containerS .slide_img .prevS span {
+      border-color: transparent #fff transparent transparent;
+      right: 35%; }
+    .containerS .slide_img .nextS span {
+      border-color: transparent transparent transparent #fff;
+      left: 35%; }
+  .containerS #nav_slide {
+    width: 100%;
+    bottom: 12%;
+    height: 11px;
+    position: absolute;
+    text-align: center;
+    z-index: 99;
+    cursor: default; }
+    .containerS #nav_slide .dots {
+      top: -5px;
+      width: 18px;
+      height: 18px;
+      margin: 0 3px;
+      position: relative;
+      border-radius: 100%;
+      display: inline-block;
+      background-color: rgba(0, 0, 0, 0.6);
+      transition: .4s;
+      cursor: pointer; }
+    .containerS #nav_slide #dot1:hover {
+      background: #795548; }
+    .containerS #nav_slide #dot2:hover {
+      background: white; }
+    .containerS #nav_slide #dot3:hover {
+      background: #2196F3; }
+    .containerS #nav_slide #dot4:hover {
+      background: #4CAF50; }
+
+#i1:checked ~ #one,
+#i2:checked ~ #two,
+#i3:checked ~ #three,
+#i4:checked ~ #four {
+  z-index: 9;
+  animation: scroll 1s ease-in-out; }
+
+#i1:checked ~ #nav_slide #dot1 {
+  background: #795548; }
+
+#i2:checked ~ #nav_slide #dot2 {
+  background: white; }
+
+#i3:checked ~ #nav_slide #dot3 {
+  background: #2196F3; }
+
+#i4:checked ~ #nav_slide #dot4 {
+  background: #4CAF50; }
+
+@keyframes scroll {
+  0% {
+    opacity: .4; }
+  100% {
+    opacity: 1; } }
+
+@media screen and (max-width: 685px) {
+  .containerS {
+    border: none;
+    width: 100%;
+    height: 0;
+    padding-bottom: 55%; }
+    .containerS .slide_img .prevS,
+    .containerS .slide_img .nextS {
+      width: 15%; }
+    .containerS .slide_img .prevS span,
+    .containerS .slide_img .nextS span {
+      border: solid 12px; }
+    .containerS .slide_img .prevS span {
+      border-color: transparent #fff transparent transparent; }
+    .containerS .slide_img .nextS span {
+      border-color: transparent transparent transparent #fff; }
+    .containerS #nav_slide .dots {
+      width: 12px;
+      height: 12px; } }
+
+.yt {
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 80px;
+  height: 40px;
+  border-radius: 4px;
+  text-align: center;
+  background: #2196F3;
+  box-shadow: 0 11px 22px rgba(0, 0, 0, 0.2), 0 7px 7px rgba(0, 0, 0, 0.24);
+  transition: .4s;
+  opacity: .4; }
+  .yt a {
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    font-size: 23px;
+    top: 4px; }
+
+.yt:hover {
+  transition: .3s;
+  box-shadow: none;
+  opacity: .8; }
+
+.fourthPageBackground {
+  background-color: #F3F3F3; }
+
+.newPage .newPageContainer {
+  display: flex;
+  flex-direction: column; }
 
 @media screen and (max-width: 800px) {
   .nav-menu {
