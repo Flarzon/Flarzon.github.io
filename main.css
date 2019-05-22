@@ -973,7 +973,10 @@ LEVEL 4. SETTINGS
   .secondPageBottomBlock {
     background-size: 120px 140px; }
   .thirdPageBackground {
-    background-size: 120px 140px; } }
+    background-size: 120px 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; } }
 
 @media screen and (max-width: 767px) {
   .header {
