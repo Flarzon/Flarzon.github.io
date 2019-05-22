@@ -699,8 +699,6 @@ LEVEL 4. SETTINGS
   height: 100vh; }
 
 .thirdPageContainer {
-  margin-top: 2vh;
-  height: 20vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1204,7 +1202,7 @@ LEVEL 4. SETTINGS
   .thirdPageTextBlock {
     position: relative;
     font-size: 0.9rem;
-    top: 60%; } }
+    top: 50%; } }
 
 @media screen and (max-width: 320px) {
   .thirdPageTextBlock {
