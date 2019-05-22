@@ -483,7 +483,7 @@ LEVEL 4. SETTINGS
   background-color: #25292F;
   flex: auto;
   box-sizing: border-box;
-  margin-bottom: 5vh; }
+  margin-bottom: 5%; }
 
 .homePage .homeTextWrapper {
   display: flex;
@@ -606,7 +606,7 @@ LEVEL 4. SETTINGS
   height: 100vh; }
 
 #secondPage {
-  height: 100vh; }
+  height: 100%; }
 
 .secondPageTopBlocksContainer {
   display: flex;
@@ -625,7 +625,7 @@ LEVEL 4. SETTINGS
 
 .secondPageTopBlock:nth-child(2) {
   background-image: url("/images/number2.png");
-  background-position: 0 100%;
+  background-position-x: 100%;
   margin: 0 2vw 0 0; }
 
 .secondPageTopBlockPicture {
@@ -698,15 +698,25 @@ LEVEL 4. SETTINGS
   height: 100vh; }
 
 .thirdPageContainer {
-  height: 30vh;
+  margin-top: 2vh;
+  height: 20vh;
   display: flex;
   justify-content: center;
   align-items: center;
   perspective: 1000px; }
 
 .thirdPageBackground {
-  height: 85vh;
-  background-color: #F3F3F3; }
+  margin-top: 2vh;
+  height: 100vh;
+  background-color: #F3F3F3;
+  background-image: url("/images/number3.png");
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  background-position-y: 100%; }
+
+.thirdPageTextBlock {
+  position: absolute;
+  transform: translate(0, 220%); }
 
 .cardContainer {
   display: flex;
@@ -778,10 +788,10 @@ LEVEL 4. SETTINGS
   display: none; }
 
 .newPage .titleHeader {
-  margin-left: 20vh;
+  margin-left: 10%;
   display: flex;
-  height: 15vh;
-  align-items: flex-end;
+  height: 5%;
+  /* align-items: flex-end; */
   justify-content: flex-start;
   text-transform: uppercase;
   color: black;
@@ -804,6 +814,8 @@ LEVEL 4. SETTINGS
   .secondPageTopBlock {
     background-size: 120px 140px; }
   .secondPageBottomBlock {
+    background-size: 120px 140px; }
+  .thirdPageBackground {
     background-size: 120px 140px; } }
 
 @media screen and (max-width: 767px) {
@@ -922,9 +934,14 @@ LEVEL 4. SETTINGS
     font-size: 3rem; }
   .secondPageTopBlock {
     background-size: 540px 580px; }
-  .secondPageBottomBlock {
+  .secondPageTopBlock:nth-child(2) {
     background-size: 540px 580px;
-    background-position: 100% 50%; } }
+    background-position-x: 0%; }
+  .thirdPageBackground {
+    background-size: 540px 580px; }
+  .thirdPageTextBlock {
+    font-size: 3rem;
+    transform: translate(0, 150%); } }
 
 @media screen and (max-width: 700px) {
   .element-with-video-bg video {
@@ -965,10 +982,18 @@ LEVEL 4. SETTINGS
     font-size: 60%; }
   .bigText {
     padding-top: 5%; }
+  .homePage .bigText {
+    margin: 0; }
+  .thirdPageBackground {
+    margin-top: 3vw; }
   .homePage .homeTitle {
     font-size: 20px; }
   .homePage .smallLine2 {
-    visibility: hidden; } }
+    visibility: hidden; }
+  .thirdPageTextBlock {
+    font-size: 0.9rem; }
+  .newPage .titleHeader {
+    margin-top: 5%; } }
 
 @media screen and (max-width: 430px) {
   .homePage .bigText {
@@ -1015,6 +1040,14 @@ LEVEL 4. SETTINGS
     height: 120%;
     width: 150%; }
   .secondPageTabletGrid {
+    font-size: 0.9rem; }
+  .thirdPageTextBlock {
+    transform: translate(0, 450%);
+    font-size: 0.9rem; } }
+
+@media screen and (max-width: 320px) {
+  .thirdPageTextBlock {
+    transform: translate(0, 280%);
     font-size: 0.9rem; } }
 
 @media screen and (min-width: 430px) and (max-width: 768px) {
@@ -1053,6 +1086,11 @@ LEVEL 4. SETTINGS
   .element-with-video-bg {
     height: 100vh; }
   .homePage .homeTextWrapper {
+    bottom: 25%; }
+  .thirdPageTextBlock {
+    transform: translate(0, 230%);
+    font-size: 0.9rem; }
+  .homePage .homeTextWrapper {
     bottom: 25%; } }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -1060,4 +1098,41 @@ LEVEL 4. SETTINGS
   .card2Picture,
   .card3Picture,
   .card4Picture {
-    width: 20vw; } }
+    width: 20vw; }
+  .newPage .newPageContainer {
+    height: 120vh; }
+  .thirdPageBackground {
+    height: 120vh; } }
+
+@media screen and (max-height: 320px) {
+  .thirdPageBackground {
+    margin-top: 7vw; }
+  .thirdPageTextBlock {
+    font-size: 0.9rem;
+    transform: translate(0, 160%); }
+  .homePage .homeTextWrapper {
+    bottom: 40%; } }
+
+@media screen and (min-width: 600px) and (min-height: 1000px) {
+  .secondPageTabletGrid {
+    height: 100%;
+    font-size: 1rem; }
+  .thirdPageTextBlock {
+    transform: translate(0, 230%);
+    font-size: 1rem; }
+  .newPage .newPageContainer {
+    height: 60vh; }
+  .thirdPageBackground {
+    height: 100%; } }
+
+@media screen and (min-width: 1300px) and (min-height: 1000px) {
+  .secondPageTopBlockPicture {
+    height: 100%; }
+  .secondPageTabletGrid {
+    height: 100%;
+    font-size: 1.7rem; }
+  .thirdPageTextBlock {
+    font-size: 1rem;
+    transform: translate(0, 330%); }
+  .thirdPageContainer {
+    height: 10vh; } }
