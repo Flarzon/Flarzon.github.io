@@ -690,18 +690,16 @@ LEVEL 4. SETTINGS
 .secondPageTopBlockText {
   font-family: 'Montserrat Italic';
   height: 25%;
-  width: 90%;
   line-height: 1.5;
-  position: relative;
-  left: 5%; }
+  padding: 0 5px 0 10px;
+  position: relative; }
 
 .secondPageBottomBlockText {
   font-family: 'Montserrat Italic';
   height: 25%;
-  width: 90%;
   line-height: 1.5;
   position: relative;
-  left: 5%; }
+  padding: 0 5px 0 10px; }
 
 .secondPageBottomBlockContainer {
   height: 40%;
@@ -859,6 +857,42 @@ LEVEL 4. SETTINGS
   color: #00A3DA;
   align-items: center;
   height: 2.5rem; }
+
+.fourthPageTextContainer {
+  display: flex;
+  width: 100%; }
+
+.fourthPageLeftText {
+  width: 50%; }
+
+.fourthPageRightText {
+  width: 50%;
+  border-left: 2px solid #00A3DA; }
+
+#fourthPageBlockTitle {
+  color: #00A3DA;
+  position: relative;
+  display: flex;
+  width: 100%;
+  font-size: 2rem;
+  text-overflow: ellipsis;
+  justify-content: center;
+  margin-left: 5px; }
+
+.textBold {
+  font-weight: bold;
+  width: 30%;
+  margin-left: 5px; }
+
+.fourthPageText {
+  display: flex;
+  font-family: 'Montserrat Italic';
+  padding: 0 0 10% 2%; }
+
+.fourthPageSmallText {
+  width: 72%;
+  margin-left: 5px;
+  padding-right: 20px; }
 
 .containerS {
   margin: 0 auto;
@@ -1190,6 +1224,9 @@ LEVEL 4. SETTINGS
     flex-direction: column; }
   .secondPageRightBottomBlock {
     width: 100%; }
+  .fourthPageText {
+    line-height: 1.5;
+    font-size: 1.2rem; }
   .newPageContainerN3 {
     height: 90vh; }
   .thirdPageContainer {
@@ -1209,6 +1246,8 @@ LEVEL 4. SETTINGS
     font-size: 1rem; }
   .secondPageRightBottomBlock {
     font-size: 60%; }
+  .fourthPageText {
+    font-size: 1rem; }
   .homePage .homeTextWrapper {
     font-size: 60%; }
   .bigText {
@@ -1322,6 +1361,8 @@ LEVEL 4. SETTINGS
     margin-right: 30px; }
   .secondPageBottomBlockText {
     font-size: 1rem; }
+  .fourthPageText {
+    font-size: 1rem; }
   .secondPageTopLeftPicture {
     width: 60%;
     height: 150%; }
@@ -1358,6 +1399,8 @@ LEVEL 4. SETTINGS
     font-size: 1.7rem; }
   .secondPageBottomBlockText {
     font-size: 1.7rem; }
+  .fourthPageText {
+    font-size: 1.7rem; }
   .newPage .newPageContainer {
     height: 60vh; }
   .secondPageTopBlocksContainer {
@@ -1390,6 +1433,8 @@ LEVEL 4. SETTINGS
   .secondPageTopBlockText {
     font-size: 1.4rem; }
   .secondPageBottomBlockText {
+    font-size: 1.4rem; }
+  .fourthPageText {
     font-size: 1.4rem; } }
 
 @media screen and (min-width: 1365px) and (max-width: 1367px) and (min-height: 1023px) and (max-height: 1025px) {
