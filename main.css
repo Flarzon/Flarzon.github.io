@@ -127,9 +127,6 @@ body {
   flex: auto;
   overflow-x: hidden; }
 
-.menuOpen {
-  overflow: hidden; }
-
 .bgVideo {
   display: block;
   width: 100%;
@@ -357,6 +354,13 @@ body {
   --rLinkColor: var(--colorWhite);
   padding: .5rem 3rem;
   font-size: 3.2rem;
+  text-transform: capitalize;
+  font-family: 'Montserrat Italic'; }
+
+.menu__group:nth-child(1) {
+  --rLinkColor: var(--colorWhite);
+  padding: .5rem 3rem;
+  font-size: 4rem;
   text-transform: capitalize;
   font-family: 'Montserrat Italic'; }
 
@@ -1112,6 +1116,32 @@ LEVEL 4. SETTINGS
   padding-left: 25%;
   margin-bottom: 10px; }
 
+.sixthPageBackground {
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 3px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 83ms;
+  background-color: #25292F;
+  height: 100%; }
+
+.sixthPageContainer {
+  display: flex; }
+
+.sixthPageBlock {
+  width: 30%;
+  margin: 0 1.5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #00A3DA;
+  font-size: 3rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  height: 30vh; }
+
+.contactBackground {
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 3px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 83ms;
+  background-color: #F3F3F3; }
+
 .newPage .newPageContainer {
   display: flex;
   flex-direction: column; }
@@ -1310,7 +1340,10 @@ LEVEL 4. SETTINGS
   .leadText {
     line-height: 1.5;
     font-size: 1.2rem;
-    padding: 0 5% 5% 5%; } }
+    padding: 0 5% 5% 5%; }
+  .sixthPageBlock {
+    font-size: 1.4rem;
+    height: 20vh; } }
 
 .secondPageBottomBlockPicture {
   width: 100%; }
@@ -1343,7 +1376,11 @@ LEVEL 4. SETTINGS
   .thirdPageTextBlock {
     font-size: 0.9rem; }
   .newPage .titleHeader {
-    margin-top: 5%; } }
+    margin-top: 5%; }
+  .leadText {
+    font-size: 1rem; }
+  .sixthPageBlock {
+    font-size: 1.2rem; } }
 
 @media screen and (max-width: 430px) {
   .homePage .bigText {
@@ -1448,7 +1485,9 @@ LEVEL 4. SETTINGS
     height: 150%; }
   .secondPageTopRightPicture {
     width: 60%;
-    height: 150%; } }
+    height: 150%; }
+  .sixthPageBlock {
+    font-size: 2rem; } }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .card1Picture,
@@ -1500,7 +1539,12 @@ LEVEL 4. SETTINGS
   .secondPageTopBlocksContainer {
     height: 50vh; }
   .newPageContainerN3 {
-    height: 43vh; } }
+    height: 43vh !important; }
+  .leadText {
+    font-size: 1.7rem; }
+  .sixthPageBlock {
+    height: 20vh;
+    font-size: 2.5rem; } }
 
 @media screen and (min-width: 1300px) and (min-height: 1000px) {
   .secondPageTopBlockPicture {
@@ -1523,7 +1567,9 @@ LEVEL 4. SETTINGS
   .leadText {
     font-size: 2.5rem; }
   .leadTitle {
-    font-size: 2.5rem; } }
+    font-size: 2.5rem; }
+  .sixthPageBlock {
+    height: 20vh; } }
 
 @media screen and (min-width: 374px) and (max-width: 376px) and (min-height: 811px) and (max-height: 813px) {
   .newPageContainerN3 {

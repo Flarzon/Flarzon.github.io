@@ -11,6 +11,8 @@ mywindow.scroll(function() {
         $('.header').addClass('headerFade')
         $('.clientsSliderContainer').addClass('clientsSliderShow')
         $('.clientsSliderContainer').removeClass('clientsSliderFade')
+        $('.header').addClass('.menu_activated')
+
     } else {
 
         $('.header').removeClass('headerFade')
@@ -73,6 +75,11 @@ $(document).ready(function() {
     function callMenuToggle() {
         demoMenu.toggleMenuState('menu_activated');
         document.body.classList.toggle('menuOpen');
+        window.onscroll = function() {
+            if (demoMenu.menuNode.className == 'menu menu_activated')
+                demoMenu.toggleMenuState('menu_activated');
+
+        }
 
     }
 
@@ -112,6 +119,11 @@ jQuery(function($) {
     }
     $(window).on('resize', fix_size);
     fix_size();
+});
+
+$("body").on('click', '[href*="#"]', function(e) {
+    $('html,body').stop().animate({ scrollTop: $(this.hash).offset().top }, 1000);
+    e.preventDefault();
 });
 
 // $(document).ready(function() {
