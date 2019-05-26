@@ -636,12 +636,8 @@ LEVEL 4. SETTINGS
   flex-direction: column;
   margin: 0 2vw 0 1vw; }
 
-.secondPageTopBlock:nth-child(1) {
-  margin-left: 5%; }
-
 .secondPageTopBlock:nth-child(2) {
-  background-position-x: 100%;
-  margin-right: 5%; }
+  background-position-x: 100%; }
 
 .secondPageTopLeftPicture {
   height: 70%;
@@ -1540,3 +1536,9 @@ LEVEL 4. SETTINGS
     height: 130vw; }
   .secondPageTopBlock {
     height: 60vw; } }
+
+@media screen and (min-width: 767px) {
+  .secondPageTopBlock:nth-child(1) {
+    margin-left: 5%; }
+  .secondPageTopBlock:nth-child(2) {
+    margin-right: 5%; } }
