@@ -1336,7 +1336,9 @@ LEVEL 4. SETTINGS
   .card4Picture {
     width: 20vw; }
   .newPage .newPageContainer {
-    height: 120vh; } }
+    height: 120vh; }
+  .homePage .smallLine2 {
+    visibility: hidden; } }
 
 @media screen and (max-height: 320px) {
   .thirdPageBackground {
@@ -1361,7 +1363,7 @@ LEVEL 4. SETTINGS
   .secondPageTopBlocksContainer {
     height: 50vh; }
   .newPageContainerN3 {
-    height: 40vh; } }
+    height: 43vh; } }
 
 @media screen and (min-width: 1300px) and (min-height: 1000px) {
   .secondPageTopBlockPicture {
