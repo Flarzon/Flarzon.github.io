@@ -23,6 +23,7 @@ mywindow.scroll(function() {
         $('.header').addClass('headerScrolled')
     } else {
         $('.header').removeClass('headerScrolled')
+        $('.header').removeClass('headerFade')
     }
 
     if (scrolledToBottom < 100) {

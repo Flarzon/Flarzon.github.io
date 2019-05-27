@@ -657,7 +657,8 @@ LEVEL 4. SETTINGS
 
 .secondPageTopRightPicture {
   background-image: url("/images/universitiesPicture.png");
-  height: 65%;
+  height: 60%;
+  margin-top: 5%;
   background-size: 100% 90%;
   background-repeat: no-repeat;
   display: flex;
@@ -733,6 +734,9 @@ LEVEL 4. SETTINGS
   display: flex;
   justify-content: center;
   flex-direction: column; }
+
+.newPageContainerN3 {
+  height: 100vh; }
 
 .thirdPageContainer {
   display: flex;
@@ -869,7 +873,7 @@ LEVEL 4. SETTINGS
   width: 100%; }
 
 .fourthPageLeftText {
-  width: 50%; }
+  width: 75%; }
 
 .fourthPageRightText {
   width: 50%;
@@ -880,7 +884,7 @@ LEVEL 4. SETTINGS
   position: relative;
   display: flex;
   width: 90%;
-  font-size: 2rem;
+  font-size: 1.7rem;
   text-overflow: ellipsis;
   justify-content: center;
   margin-left: 5px;
@@ -888,13 +892,15 @@ LEVEL 4. SETTINGS
 
 .textBold {
   font-weight: bold;
-  width: 30%;
-  margin-left: 5px; }
+  margin-left: 5px;
+  display: flex;
+  flex-direction: row; }
 
 .fourthPageText {
   display: flex;
   font-family: 'Montserrat Italic';
-  padding: 0 0 10% 2%; }
+  padding: 0 0 10% 2%;
+  font-size: 1.4vw; }
 
 .fourthPageSmallText {
   width: 72%;
@@ -1140,9 +1146,26 @@ LEVEL 4. SETTINGS
   transition: box-shadow 83ms;
   background-color: #F3F3F3; }
 
+#linkedin {
+  border-radius: 50px; }
+
+.leftTextBoldTitle {
+  display: flex;
+  width: 30%;
+  flex-direction: column; }
+
+.rightTextBoldTitle {
+  display: flex;
+  width: 40%;
+  flex-direction: column; }
+
 .newPage .newPageContainer {
   display: flex;
   flex-direction: column; }
+
+#mailto {
+  text-decoration: none;
+  color: #00A3DA; }
 
 @media screen and (max-width: 799px) {
   .nav-menu {
