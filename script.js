@@ -90,14 +90,17 @@ jQuery(function($) {
     function fix_size() {
         var images = $('.fifthPagePicture img');
         var images2 = $('.fifthPageLead img');
+        // var images3 = $('#linkedin');
         images.each(setsize);
         images2.each(setsize);
+        // images3.each(setsize);
 
         function setsize() {
             var img = $(this),
                 img_dom = img.get(0),
                 container = img.parents('.fifthPagePicture'),
-                container2 = img.parents('.fifthPageLead');
+                container2 = img.parents('.fifthPageLead'),
+                container3 = img.parents('.LI-profile-badge');
             if (img_dom.complete) {
                 resize();
             } else img.one('load', resize);
@@ -113,6 +116,11 @@ jQuery(function($) {
                     img.height('auto');
                     return;
                 }
+                // if ((container3.width() / container3.height()) < (img_dom.width / img_dom.height)) {
+                //     img.width('100%');
+                //     img.height('auto');
+                //     return;
+                // }
                 img.height('100%');
                 img.width('auto');
             }
