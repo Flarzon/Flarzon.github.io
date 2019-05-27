@@ -1411,7 +1411,7 @@ LEVEL 4. SETTINGS
     height: 50%;
     margin-left: 25%; }
   .heightForBigScreens {
-    height: 60vh; } }
+    height: 60vh !important; } }
 
 @media screen and (min-height: 568px) {
   .sixthPageBlock {
@@ -1615,7 +1615,7 @@ LEVEL 4. SETTINGS
     height: 20vh;
     font-size: 200%; }
   .newPageContainerN3 {
-    height: 43vh !important; } }
+    height: 43vh; } }
 
 @media screen and (min-width: 374px) and (max-width: 376px) and (min-height: 811px) and (max-height: 813px) {
   .newPageContainerN3 {
