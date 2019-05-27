@@ -98,9 +98,9 @@ jQuery(function($) {
         function setsize() {
             var img = $(this),
                 img_dom = img.get(0),
-                container = img.parents('.fifthPagePicture'),
-                container2 = img.parents('.fifthPageLead'),
-                container3 = img.parents('.LI-profile-badge');
+                container = img.parents('.fifthPagePicture');
+            // container2 = img.parents('.fifthPageLead'),
+            // container3 = img.parents('.LI-profile-badge');
             if (img_dom.complete) {
                 resize();
             } else img.one('load', resize);
@@ -111,11 +111,11 @@ jQuery(function($) {
                     img.height('auto');
                     return;
                 }
-                if ((container2.width() / container2.height()) < (img_dom.width / img_dom.height)) {
-                    img.width('100%');
-                    img.height('auto');
-                    return;
-                }
+                // if ((container2.width() / container2.height()) < (img_dom.width / img_dom.height)) {
+                //     img.width('100%');
+                //     img.height('auto');
+                //     return;
+                // }
                 // if ((container3.width() / container3.height()) < (img_dom.width / img_dom.height)) {
                 //     img.width('100%');
                 //     img.height('auto');
