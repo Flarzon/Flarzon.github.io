@@ -1610,7 +1610,9 @@ LEVEL 4. SETTINGS
     font-size: 2.5rem; }
   .sixthPageBlock {
     height: 20vh;
-    font-size: 200%; } }
+    font-size: 200%; }
+  .newPageContainerN3 {
+    height: 43vh !important; } }
 
 @media screen and (min-width: 374px) and (max-width: 376px) and (min-height: 811px) and (max-height: 813px) {
   .newPageContainerN3 {
