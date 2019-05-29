@@ -903,6 +903,12 @@ LEVEL 4. SETTINGS
   padding: 0 0 10% 2%;
   font-size: 1.4vw; }
 
+.fourthPagePic {
+  display: flex;
+  font-family: 'Montserrat Italic';
+  padding: 0 0 10% 2%;
+  font-size: 1.4vw; }
+
 .fourthPageSmallText {
   width: 72%;
   margin-left: 5px;

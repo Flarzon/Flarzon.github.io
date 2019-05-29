@@ -99,8 +99,6 @@ jQuery(function($) {
             var img = $(this),
                 img_dom = img.get(0),
                 container = img.parents('.fifthPagePicture');
-            // container2 = img.parents('.fifthPageLead'),
-            // container3 = img.parents('.LI-profile-badge');
             if (img_dom.complete) {
                 resize();
             } else img.one('load', resize);
@@ -128,6 +126,44 @@ jQuery(function($) {
     }
     $(window).on('resize', fix_size);
     fix_size();
+});
+
+jQuery(function($) {
+    function fix_size2() {
+        var images = $('.fourthPagePic img');
+        images.each(setsize2);
+
+        function setsize2() {
+            var img = $(this),
+                img_dom = img.get(0),
+                container = img.parents('.fourthPagePic');
+            if (img_dom.complete) {
+                resize();
+            } else img.one('load', resize);
+
+            function resize() {
+                if ((container.width() / container.height()) < (img_dom.width / img_dom.height)) {
+                    img.width('100%');
+                    img.height('auto');
+                    return;
+                }
+                // if ((container2.width() / container2.height()) < (img_dom.width / img_dom.height)) {
+                //     img.width('100%');
+                //     img.height('auto');
+                //     return;
+                // }
+                // if ((container3.width() / container3.height()) < (img_dom.width / img_dom.height)) {
+                //     img.width('100%');
+                //     img.height('auto');
+                //     return;
+                // }
+                img.height('100%');
+                img.width('auto');
+            }
+        }
+    }
+    $(window).on('resize', fix_size2);
+    fix_size2();
 });
 
 $("body").on('click', '[href*="#"]', function(e) {
