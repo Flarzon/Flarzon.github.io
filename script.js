@@ -144,7 +144,7 @@ jQuery(function($) {
             function resize() {
                 if ((container.width() / container.height()) < (img_dom.width / img_dom.height)) {
                     img.width('100%');
-                    img.height('auto');
+                    img.height('50%');
                     return;
                 }
                 // if ((container2.width() / container2.height()) < (img_dom.width / img_dom.height)) {
@@ -157,8 +157,8 @@ jQuery(function($) {
                 //     img.height('auto');
                 //     return;
                 // }
-                img.height('100%');
-                img.width('auto');
+                img.width('100%');
+                img.height('50%');
             }
         }
     }

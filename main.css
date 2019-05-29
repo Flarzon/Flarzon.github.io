@@ -784,7 +784,8 @@ LEVEL 4. SETTINGS
 .card-inner {
   transition: transform 0.6s;
   transform-style: preserve-3d;
-  height: 50vh;
+  height: 65vh;
+  max-height: 740px;
   width: 20vw; }
 
 .card-front,
@@ -905,9 +906,13 @@ LEVEL 4. SETTINGS
 
 .fourthPagePic {
   display: flex;
-  font-family: 'Montserrat Italic';
-  padding: 0 0 10% 2%;
-  font-size: 1.4vw; }
+  padding: 0 2% 10% 2%; }
+
+#optionsPic {
+  transition: .3s; }
+
+#optionsPic:hover {
+  transform: scale(1.05); }
 
 .fourthPageSmallText {
   width: 72%;
