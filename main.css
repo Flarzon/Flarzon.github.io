@@ -1117,6 +1117,10 @@ LEVEL 4. SETTINGS
   line-height: 1.5;
   padding-left: 2vw; }
 
+.tooBigShip {
+  width: 10px;
+  height: 10px; }
+
 .leadText {
   font-family: 'Montserrat Italic';
   display: flex;
