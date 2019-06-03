@@ -171,6 +171,43 @@ $("body").on('click', '[href*="#"]', function(e) {
     e.preventDefault();
 });
 
+$(document).ready(function() {
+
+    $('.sizeable img').click(function() {
+
+        var o = $(this).parent();
+
+        var url = o.find('img').attr('src');
+
+        var oftop = window.scrollY;
+
+        var html = '<div class="fullscr" style="top:50%;left:50%"><img src=" ' + url + '" /></div>'
+
+        o.append(html);
+
+        o = o.find('.fullscr');
+
+        o.animate({ width: '100%', height: '100%' });
+
+        o.click(function() {
+
+            $(this).remove();
+
+        });
+
+    });
+
+
+
+    $(window).scroll(function() {
+
+        $('div.fullscr').remove();
+
+    });
+
+});
+
+
 // function get_name_browser() {
 //     // получаем данные userAgent
 //     var ua = navigator.userAgent;
