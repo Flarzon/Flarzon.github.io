@@ -171,41 +171,41 @@ $("body").on('click', '[href*="#"]', function(e) {
     e.preventDefault();
 });
 
-$(document).ready(function() {
+// $(document).ready(function() {
 
-    $('.sizeable img').click(function() {
+//     $('.sizeable img').click(function() {
 
-        var o = $(this).parent();
+//         var o = $(this).parent();
 
-        var url = o.find('img').attr('src');
+//         var url = o.find('img').attr('src');
 
-        var oftop = window.scrollY;
+//         var oftop = window.scrollY;
 
-        var html = '<div class="fullscr" style="top:50%;left:50%"><img src=" ' + url + '" /></div>'
+//         var html = '<div class="fullscr" style="top:50%;left:50%"><img src=" ' + url + '" /></div>'
 
-        o.append(html);
+//         o.append(html);
 
-        o = o.find('.fullscr');
+//         o = o.find('.fullscr');
 
-        o.animate({ width: '100%', height: '100%' });
+//         o.animate({ width: '100%', height: '100%' });
 
-        o.click(function() {
+//         o.click(function() {
 
-            $(this).remove();
+//             $(this).remove();
 
-        });
+//         });
 
-    });
+//     });
 
 
 
-    $(window).scroll(function() {
+//     $(window).scroll(function() {
 
-        $('div.fullscr').remove();
+//         $('div.fullscr').remove();
 
-    });
+//     });
 
-});
+// });
 
 
 // function get_name_browser() {

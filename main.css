@@ -909,7 +909,8 @@ LEVEL 4. SETTINGS
   padding: 0 2% 10% 2%; }
 
 #optionsPic {
-  transition: .3s; }
+  transition: .3s;
+  cursor: default; }
 
 .fourthPageSmallText {
   width: 72%;
