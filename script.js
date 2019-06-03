@@ -89,10 +89,8 @@ $(document).ready(function() {
 jQuery(function($) {
     function fix_size() {
         var images = $('.fifthPagePicture img');
-        var images2 = $('.fifthPageLead img');
         // var images3 = $('#linkedin');
         images.each(setsize);
-        images2.each(setsize);
         // images3.each(setsize);
 
         function setsize() {
@@ -120,7 +118,7 @@ jQuery(function($) {
                 //     return;
                 // }
                 img.height('100%');
-                img.width('auto');
+                img.width('100%');
             }
         }
     }
@@ -147,16 +145,6 @@ jQuery(function($) {
                     img.height('50%');
                     return;
                 }
-                // if ((container2.width() / container2.height()) < (img_dom.width / img_dom.height)) {
-                //     img.width('100%');
-                //     img.height('auto');
-                //     return;
-                // }
-                // if ((container3.width() / container3.height()) < (img_dom.width / img_dom.height)) {
-                //     img.width('100%');
-                //     img.height('auto');
-                //     return;
-                // }
                 img.width('100%');
                 img.height('50%');
             }
@@ -165,6 +153,39 @@ jQuery(function($) {
     $(window).on('resize', fix_size2);
     fix_size2();
 });
+
+jQuery(function($) {
+    function fix_size4() {
+        var images = $('.secondPageTopRightPicture img');
+        var images2 = $('.fifthPageLead img');
+        var images3 = $('.secondPageTopLeftPicture img');
+        images.each(setsize4);
+        images2.each(setsize4);
+        images3.each(setsize4);
+
+        function setsize4() {
+            var img = $(this),
+                img_dom = img.get(0),
+                container = img.parents('.secondPageTopRightPicture');
+            if (img_dom.complete) {
+                resize();
+            } else img.one('load', resize);
+
+            function resize() {
+                if ((container.width() / container.height()) < (img_dom.width / img_dom.height)) {
+                    img.width('100%');
+                    img.height('100%');
+                    return;
+                }
+                img.height('100%');
+                img.width('auto');
+            }
+        }
+    }
+    $(window).on('resize', fix_size4);
+    fix_size4();
+});
+
 
 $("body").on('click', '[href*="#"]', function(e) {
     $('html,body').stop().animate({ scrollTop: $(this.hash).offset().top }, 1000);
@@ -206,97 +227,3 @@ $("body").on('click', '[href*="#"]', function(e) {
 //     });
 
 // });
-
-
-// function get_name_browser() {
-//     // получаем данные userAgent
-//     var ua = navigator.userAgent;
-//     // с помощью регулярок проверяем наличие текста,
-//     // соответствующие тому или иному браузеру
-//     if (ua.search(/Chrome/) > 0) return 'Google Chrome';
-//     if (ua.search(/Firefox/) > 0) return 'Firefox';
-//     if (ua.search(/Opera/) > 0) return 'Opera';
-//     if (ua.search(/Safari/) > 0) return 'Safari';
-//     if (ua.search(/MSIE/) > 0) return 'Internet Explorer';
-//     // условий может быть и больше.
-//     // сейчас сделаны проверки только 
-//     // для популярных браузеров
-//     return 'Не определен';
-// }
-
-// // пример использования
-// var browser = get_name_browser();
-// if (browser == 'Safari' && $(window).height() >= 1000 && $(window).width() >= 1300) {
-//     $('#thirdPage').addClass('heightForBigScreens')
-// }
-
-// $(document).ready(function() {
-
-//     // Resive video
-//     scaleVideoContainer();
-
-//     initBannerVideoSize('.video-container .poster img');
-//     initBannerVideoSize('.video-container .filter');
-//     initBannerVideoSize('.video-container video');
-
-//     $(window).on('resize', function() {
-//         scaleVideoContainer();
-//         scaleBannerVideoSize('.video-container .poster img');
-//         scaleBannerVideoSize('.video-container .filter');
-//         scaleBannerVideoSize('.video-container video');
-//     });
-
-// });
-
-// /** Reusable Functions **/
-// /********************************************************************/
-
-// function scaleVideoContainer() {
-
-//     var height = $(window).height();
-//     var unitHeight = parseInt(height) + 'px';
-//     $('.homepage-hero-module').css('height', unitHeight);
-
-// }
-
-// function initBannerVideoSize(element) {
-
-//     $(element).each(function() {
-//         $(this).data('height', $(this).height());
-//         $(this).data('width', $(this).width());
-//     });
-
-//     scaleBannerVideoSize(element);
-
-// }
-
-// function scaleBannerVideoSize(element) {
-
-//     var windowWidth = $(window).width(),
-//         windowHeight = $(window).height(),
-//         videoWidth,
-//         videoHeight;
-
-//     console.log(windowHeight);
-
-//     $(element).each(function() {
-//         var videoAspectRatio = $(this).data('height') / $(this).data('width'),
-//             windowAspectRatio = windowHeight / windowWidth;
-
-//         if (videoAspectRatio > windowAspectRatio) {
-//             videoWidth = windowWidth;
-//             videoHeight = videoWidth * videoAspectRatio;
-//             $(this).css({ 'top': -(videoHeight - windowHeight) / 2 + 'px', 'margin-left': 0 });
-//         } else {
-//             videoHeight = windowHeight;
-//             videoWidth = videoHeight / videoAspectRatio;
-//             $(this).css({ 'margin-top': 0, 'margin-left': -(videoWidth - windowWidth) / 2 + 'px' });
-//         }
-
-//         $(this).width(videoWidth).height(videoHeight);
-
-//         $('.homepage-hero-module .video-container video').addClass('fadeIn animated');
-
-
-//     });
-// }

@@ -643,9 +643,8 @@ LEVEL 4. SETTINGS
   background-position-x: 100%; }
 
 .secondPageTopLeftPicture {
-  height: 70%;
+  height: 60%;
   background-size: cover;
-  background-image: url("/images/designPicture.png");
   display: flex;
   background-size: 100% 85%;
   background-repeat: no-repeat;
@@ -655,9 +654,8 @@ LEVEL 4. SETTINGS
   margin: 0; }
 
 .secondPageTopRightPicture {
-  background-image: url("/images/universitiesPicture.png");
   height: 60%;
-  margin-top: 5%;
+  margin-top: 5px;
   background-size: 100% 90%;
   background-repeat: no-repeat;
   display: flex;
@@ -1102,7 +1100,8 @@ LEVEL 4. SETTINGS
 
 .fifthPageLeadContainer {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  padding: 5px; }
 
 .fifthPageLead {
   display: flex;
@@ -1516,7 +1515,7 @@ LEVEL 4. SETTINGS
   .homePage .homeTextWrapper {
     bottom: 25%; }
   .secondPageTopBlockText {
-    width: 40%;
+    width: 90%;
     margin-right: 30px; }
   .secondPageBottomBlockText {
     font-size: 1rem; }
