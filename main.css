@@ -851,7 +851,7 @@ LEVEL 4. SETTINGS
   display: flex;
   height: 5%;
   /* align-items: flex-end; */
-  justify-content: flex-start;
+  justify-content: center;
   text-transform: uppercase;
   color: black;
   font-family: 'Montserrat Italic';
@@ -1544,9 +1544,11 @@ LEVEL 4. SETTINGS
   .secondPageTopBlock {
     width: 50vw; }
   .secondPageTopBlock:nth-child(1) {
-    margin: none; }
+    margin: none;
+    margin-right: 1vw; }
   .secondPageTopBlock:nth-child(2) {
-    margin: none; } }
+    margin: none;
+    margin-left: 1vw; } }
 
 @media screen and (max-height: 320px) {
   .thirdPageBackground {
@@ -1649,3 +1651,9 @@ LEVEL 4. SETTINGS
     height: 130vw; }
   .secondPageTopBlock {
     height: 60vw; } }
+
+@media screen and (min-width: 767px) {
+  .secondPageTopBlock:nth-child(1) {
+    margin-right: 1vw; }
+  .secondPageTopBlock:nth-child(2) {
+    margin-left: 1vw; } }
