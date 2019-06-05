@@ -625,11 +625,11 @@ LEVEL 4. SETTINGS
 
 .secondPageTopBlocksContainer {
   display: flex;
-  height: 85vh;
+  height: 95vh;
   display: flex; }
 
 .secondPageTopBlock {
-  background-color: #F3F3F3;
+  background-color: #FAFAFA;
   width: 50vw;
   background-repeat: no-repeat;
   background-position: 100% 100%;
@@ -641,7 +641,7 @@ LEVEL 4. SETTINGS
   background-position-x: 100%; }
 
 .secondPageTopLeftPicture {
-  height: 60%;
+  height: 50%;
   background-size: cover;
   display: flex;
   background-size: 100% 85%;
@@ -652,7 +652,7 @@ LEVEL 4. SETTINGS
   margin: 0; }
 
 .secondPageTopRightPicture {
-  height: 60%;
+  height: 50%;
   margin-top: 5px;
   background-size: 100% 90%;
   background-repeat: no-repeat;
@@ -677,7 +677,7 @@ LEVEL 4. SETTINGS
   position: relative;
   display: flex;
   width: 90%;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   text-overflow: ellipsis;
   justify-content: center;
   border-bottom: 1px solid; }
@@ -695,7 +695,7 @@ LEVEL 4. SETTINGS
   font-family: 'Montserrat Italic';
   height: 20%;
   line-height: 1.5;
-  padding: 0 5px 0 10px;
+  padding: 0 20px;
   position: relative; }
 
 .secondPageBottomBlockText {
@@ -703,7 +703,7 @@ LEVEL 4. SETTINGS
   height: 25%;
   line-height: 1.5;
   position: relative;
-  padding: 0 5px 0 10px; }
+  padding: 0 20px; }
 
 .secondPageBottomBlockContainer {
   height: 40%;
@@ -743,7 +743,7 @@ LEVEL 4. SETTINGS
 
 .thirdPageBackground {
   height: 100%;
-  background-color: #F3F3F3;
+  background-color: #FAFAFA;
   background-repeat: no-repeat;
   background-position-x: 50%;
   background-position-y: 100%;
@@ -883,7 +883,7 @@ LEVEL 4. SETTINGS
   position: relative;
   display: flex;
   width: 90%;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   text-overflow: ellipsis;
   justify-content: center;
   margin-left: 5px;
@@ -912,7 +912,7 @@ LEVEL 4. SETTINGS
 .fourthPageSmallText {
   width: 72%;
   margin-left: 5px;
-  padding-right: 20px;
+  padding: 0 20px;
   color: #434343aa; }
 
 .containerS {
@@ -1065,11 +1065,11 @@ LEVEL 4. SETTINGS
   opacity: .8; }
 
 .fourthPageBackground {
-  background-color: #F3F3F3;
+  background-color: #FAFAFA;
   margin-top: 2vh; }
 
 .fifthPageBackground {
-  background-color: #F3F3F3;
+  background-color: #FAFAFA;
   height: 100%;
   margin-bottom: 2vh; }
 
@@ -1154,7 +1154,7 @@ LEVEL 4. SETTINGS
 .contactBackground {
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 3px rgba(0, 0, 0, 0.2);
   transition: box-shadow 83ms;
-  background-color: #F3F3F3; }
+  background-color: #FAFAFA; }
 
 #linkedin {
   border-radius: 50px; }
@@ -1379,6 +1379,10 @@ LEVEL 4. SETTINGS
     flex-direction: column; }
   .secondPageRightBottomBlock {
     width: 100%; }
+  .secondPageTopLeftPicture {
+    height: 50%; }
+  .secondPageTopRightPicture {
+    height: 45%; }
   .fourthPageText {
     line-height: 1.5;
     font-size: 1.2rem; }
@@ -1409,7 +1413,9 @@ LEVEL 4. SETTINGS
   .fourthPageText {
     font-size: 1rem; }
   .secondPageTopRightPicture {
-    height: 50%; }
+    height: 35%; }
+  .secondPageTopLeftPicture {
+    height: 45%; }
   .homePage .homeTextWrapper {
     font-size: 60%; }
   .bigText {
@@ -1451,7 +1457,7 @@ LEVEL 4. SETTINGS
     align-items: center; }
   .secondPageTopBlock {
     width: 100%;
-    height: 40vh;
+    height: 45vh;
     font-size: 50%;
     margin: 0 0 5% 0; }
   .secondPageTopBlock:nth-child(2) {
@@ -1485,7 +1491,7 @@ LEVEL 4. SETTINGS
     flex-direction: column;
     align-items: center; }
   .secondPageTopBlock {
-    width: 90%;
+    width: 100%;
     height: 40vh;
     font-size: 50%;
     margin: 0 0 5% 0; }
@@ -1522,27 +1528,23 @@ LEVEL 4. SETTINGS
     font-size: 1rem; }
   .secondPageTopLeftPicture {
     width: 60%;
-    height: 150%; }
+    height: 100%; }
   .secondPageTopRightPicture {
     width: 60%;
-    height: 150%; }
+    height: 100%; }
   .sixthPageBlock {
     font-size: 2rem; } }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .newPage .newPageContainer {
     height: 120vh; }
-  .secondPageTopLeftPicture {
-    margin-top: 13%; }
-  .secondPageTopRightPicture {
-    margin-top: 13%; }
   .homePage .smallLine2 {
     visibility: hidden; }
   .secondPageTopBlock {
     width: 50vw; }
   .secondPageTopBlock:nth-child(1) {
     margin: none;
-    margin-right: 1vw; }
+    margin-right: 0; }
   .secondPageTopBlock:nth-child(2) {
     margin: none;
     margin-left: 1vw; } }
@@ -1598,7 +1600,7 @@ LEVEL 4. SETTINGS
   .fourthPageText {
     font-size: 2.5rem; }
   #fourthPageBlockTitle {
-    font-size: 2.5rem; }
+    font-size: 3.5rem; }
   .leadText {
     font-size: 2.5rem; }
   .leadTitle {
@@ -1651,6 +1653,6 @@ LEVEL 4. SETTINGS
 
 @media screen and (min-width: 767px) {
   .secondPageTopBlock:nth-child(1) {
-    margin-right: 1vw; }
+    margin-right: 0; }
   .secondPageTopBlock:nth-child(2) {
     margin-left: 1vw; } }
