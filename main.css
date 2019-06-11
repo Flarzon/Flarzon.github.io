@@ -621,27 +621,29 @@ LEVEL 4. SETTINGS
 
 .secondPageContentWrapper {
   height: 100%;
-  width: 100%; }
+  width: 100%;
+  display: flex; }
 
 .secondPageTopBlocksContainer {
   display: flex;
-  height: 95vh;
   display: flex; }
 
 .secondPageTopBlock {
   background-color: #FAFAFA;
-  width: 50vw;
+  width: 49vw;
+  height: 50vh;
   background-repeat: no-repeat;
   background-position: 100% 100%;
   display: flex;
   flex-direction: column;
-  color: #434343aa; }
+  color: #555555; }
 
 .secondPageTopBlock:nth-child(2) {
   background-position-x: 100%; }
 
 .secondPageTopLeftPicture {
   height: 50%;
+  width: 60%;
   background-size: cover;
   display: flex;
   background-size: 100% 85%;
@@ -652,8 +654,10 @@ LEVEL 4. SETTINGS
   margin: 0; }
 
 .secondPageTopRightPicture {
-  height: 50%;
-  margin-top: 5px;
+  height: 40%;
+  width: 50%;
+  margin-top: 5%;
+  padding: 0 20px;
   background-size: 100% 90%;
   background-repeat: no-repeat;
   display: flex;
@@ -677,10 +681,8 @@ LEVEL 4. SETTINGS
   position: relative;
   display: flex;
   width: 90%;
-  font-size: 3.5rem;
-  text-overflow: ellipsis;
-  justify-content: center;
-  border-bottom: 1px solid; }
+  font-size: 3vw;
+  text-overflow: ellipsis; }
 
 .titleCenterer {
   display: flex;
@@ -693,17 +695,23 @@ LEVEL 4. SETTINGS
 
 .secondPageTopBlockText {
   font-family: 'Montserrat Italic';
-  height: 20%;
   line-height: 1.5;
+  width: 60%;
   padding: 0 20px;
-  position: relative; }
+  font-size: 1.3vw;
+  position: relative;
+  box-sizing: border-box;
+  text-align: justify; }
 
-.secondPageBottomBlockText {
+.thirdPageText {
   font-family: 'Montserrat Italic';
   height: 25%;
   line-height: 1.5;
   position: relative;
-  padding: 0 20px; }
+  padding: 0 20px;
+  text-align: justify;
+  width: 100%;
+  font-size: 1.3vw; }
 
 .secondPageBottomBlockContainer {
   height: 40%;
@@ -733,12 +741,10 @@ LEVEL 4. SETTINGS
 .thirdPageContainer {
   display: flex;
   justify-content: center;
-  align-items: center;
   perspective: 1000px;
   margin-top: 30px; }
 
 .thirdPageTextBackground {
-  margin-top: 2vh;
   height: 10vh; }
 
 .thirdPageBackground {
@@ -747,8 +753,7 @@ LEVEL 4. SETTINGS
   background-repeat: no-repeat;
   background-position-x: 50%;
   background-position-y: 100%;
-  margin-top: 2vh;
-  color: #434343aa; }
+  color: #555555; }
 
 .cardContainer {
   display: flex;
@@ -779,9 +784,13 @@ LEVEL 4. SETTINGS
 .card-inner {
   transition: transform 0.6s;
   transform-style: preserve-3d;
-  height: 65vh;
+  height: 45vh;
   max-height: 740px;
-  width: 20vw; }
+  width: 15vw;
+  margin-right: 5px; }
+
+#lastCard {
+  margin-right: 20px; }
 
 .card-front,
 .card-back {
@@ -842,10 +851,10 @@ LEVEL 4. SETTINGS
   /* align-items: flex-end; */
   justify-content: center;
   text-transform: uppercase;
-  color: black;
   font-family: 'Montserrat Italic';
   margin-top: 7%;
-  font-size: 2em; }
+  color: #485058;
+  font-size: 3vw; }
 
 .titleHeaderWithMargin {
   margin-left: 20px;
@@ -856,7 +865,8 @@ LEVEL 4. SETTINGS
   text-transform: uppercase;
   color: black;
   font-family: 'Montserrat Italic';
-  font-size: 2em; }
+  font-size: 3vw;
+  color: #485058; }
 
 .newPage #titleHeaderLine {
   visibility: hidden;
@@ -871,10 +881,10 @@ LEVEL 4. SETTINGS
   display: flex;
   width: 100%; }
 
-.fourthPageLeftText {
+.fourthPageTopText {
   width: 75%; }
 
-.fourthPageRightText {
+.fourthPageBottomText {
   width: 50%;
   border-left: 2px solid #00A3DA; }
 
@@ -883,7 +893,7 @@ LEVEL 4. SETTINGS
   position: relative;
   display: flex;
   width: 90%;
-  font-size: 3.5rem;
+  font-size: 3vw;
   text-overflow: ellipsis;
   justify-content: center;
   margin-left: 5px;
@@ -1257,17 +1267,19 @@ LEVEL 4. SETTINGS
     position: relative; }
   .fourthPageTextContainer {
     flex-direction: column; }
-  .fourthPageLeftText {
+  .fourthPageTopText {
     width: 100%;
     border-bottom: 2px solid #00A3DA; }
-  .fourthPageRightText {
+  .fourthPageBottomText {
     width: 100%;
     border: none; }
   .card-inner {
-    height: 30vh;
-    width: 20vw; }
+    height: 25vh;
+    width: 15vw; }
   .thirdPageContainer {
-    margin-top: 30px; } }
+    margin-top: 30px; }
+  .thirdPageBackground {
+    margin-top: 2vh; } }
 
 .no-video .element-with-video-bg video,
 .touch .element-with-video-bg video {
@@ -1369,7 +1381,8 @@ LEVEL 4. SETTINGS
     width: 50%;
     height: 50%;
     margin-left: 25%; }
-  .secondPageTopBlockText {
+  .secondPageTopBlockText,
+  .thirdPageText {
     line-height: 1.5;
     font-size: 1.2rem; }
   .secondPageBottomBlockText {
@@ -1494,7 +1507,7 @@ LEVEL 4. SETTINGS
     width: 100%;
     height: 40vh;
     font-size: 50%;
-    margin: 0 0 5% 0; }
+    margin: 0 0 2vh 0; }
   .secondPageTopBlock:nth-child(2) {
     margin: 0; }
   .secondPageLeftPicture {
@@ -1589,8 +1602,10 @@ LEVEL 4. SETTINGS
     width: 200%;
     height: 200%;
     border-radius: 100px; }
-  .secondPageTopBlockText {
-    font-size: 2.5rem; }
+  .secondPageTopBlockText,
+  .thirdPageText,
+  .fourthPageSmallText {
+    font-size: 3.5rem; }
   .thirdPageTextBlock {
     font-size: 1rem; }
   .thirdPageContainer {
@@ -1656,3 +1671,11 @@ LEVEL 4. SETTINGS
     margin-right: 0; }
   .secondPageTopBlock:nth-child(2) {
     margin-left: 1vw; } }
+
+@media screen and (max-width: 1120px) {
+  .secondPageTopBlock {
+    height: 35vh; } }
+
+@media screen and (max-width: 867px) {
+  .secondPageTopBlock {
+    height: 30vh; } }

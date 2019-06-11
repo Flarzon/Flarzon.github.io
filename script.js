@@ -156,17 +156,13 @@ jQuery(function($) {
 
 jQuery(function($) {
     function fix_size4() {
-        var images = $('.secondPageTopRightPicture img');
-        var images2 = $('.fifthPageLead img');
-        var images3 = $('.secondPageTopLeftPicture img');
+        var images = $('.fifthPageLead img');
         images.each(setsize4);
-        images2.each(setsize4);
-        images3.each(setsize4);
 
         function setsize4() {
             var img = $(this),
                 img_dom = img.get(0),
-                container = img.parents('.secondPageTopRightPicture');
+                container = img.parents('.fifthPageLead');
             if (img_dom.complete) {
                 resize();
             } else img.one('load', resize);
@@ -177,8 +173,8 @@ jQuery(function($) {
                     img.height('100%');
                     return;
                 }
-                img.height('100%');
                 img.width('auto');
+                img.height('100%');
             }
         }
     }
@@ -186,44 +182,39 @@ jQuery(function($) {
     fix_size4();
 });
 
+jQuery(function($) {
+    function fix_size5() {
+        var images = $('.secondPageTopRightPicture img');
+        var images2 = $('.secondPageTopLeftPicture img');
+        images.each(setsize5);
+        images2.each(setsize5);
+
+        function setsize5() {
+            var img = $(this),
+                img_dom = img.get(0),
+                container = img.parents('.secondPageTopRightPicture');
+            container2 = img.parents('.secondPageTopLeftPicture');
+            if (img_dom.complete) {
+                resize();
+            } else img.one('load', resize);
+
+            function resize() {
+                if ((container.width() / container.height()) < (img_dom.width / img_dom.height) || (container2.width() / container2.height()) < (img_dom.width / img_dom.height)) {
+                    img.width('100%');
+                    img.height('100%');
+                    return;
+                }
+                img.width('100%');
+                img.height('100%');
+            }
+        }
+    }
+    $(window).on('resize', fix_size5);
+    fix_size5();
+});
+
 
 $("body").on('click', '[href*="#"]', function(e) {
     $('html,body').stop().animate({ scrollTop: $(this.hash).offset().top }, 1000);
     e.preventDefault();
 });
-
-// $(document).ready(function() {
-
-//     $('.sizeable img').click(function() {
-
-//         var o = $(this).parent();
-
-//         var url = o.find('img').attr('src');
-
-//         var oftop = window.scrollY;
-
-//         var html = '<div class="fullscr" style="top:50%;left:50%"><img src=" ' + url + '" /></div>'
-
-//         o.append(html);
-
-//         o = o.find('.fullscr');
-
-//         o.animate({ width: '100%', height: '100%' });
-
-//         o.click(function() {
-
-//             $(this).remove();
-
-//         });
-
-//     });
-
-
-
-//     $(window).scroll(function() {
-
-//         $('div.fullscr').remove();
-
-//     });
-
-// });
