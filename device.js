@@ -303,7 +303,7 @@
 }).call(this);
 
 
-if (device.landscape()) {
-    document.getElementById('secondPageTopRightPicture').style.height = '150%';
-    document.getElementById('secondPageTopRightPicture').style.margin = '0';
-}
+// if (device.landscape()) {
+//     document.getElementById('secondPageTopRightPicture').style.height = '150%';
+//     document.getElementById('secondPageTopRightPicture').style.margin = '0';
+// }

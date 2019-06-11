@@ -141,11 +141,11 @@ jQuery(function($) {
 
             function resize() {
                 if ((container.width() / container.height()) < (img_dom.width / img_dom.height)) {
-                    img.width('100%');
+                    img.width('60%');
                     img.height('50%');
                     return;
                 }
-                img.width('100%');
+                img.width('60%');
                 img.height('50%');
             }
         }
@@ -169,11 +169,11 @@ jQuery(function($) {
 
             function resize() {
                 if ((container.width() / container.height()) < (img_dom.width / img_dom.height)) {
-                    img.width('100%');
+                    img.width('auto');
                     img.height('100%');
                     return;
                 }
-                img.width('auto');
+                img.width('10vmin');
                 img.height('100%');
             }
         }
