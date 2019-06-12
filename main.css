@@ -910,7 +910,7 @@ LEVEL 4. SETTINGS
 .fourthPageText {
   display: flex;
   font-family: 'Montserrat Italic';
-  padding-bottom: 10%;
+  padding-bottom: 5%;
   font-size: 1.4vw;
   flex-direction: column; }
 
@@ -1617,6 +1617,8 @@ LEVEL 4. SETTINGS
   .thirdPageText,
   .fourthPageSmallText {
     font-size: 3.5rem; }
+  .card-inner {
+    height: 40vmin; }
   .thirdPageTextBlock {
     font-size: 1rem; }
   .thirdPageContainer {

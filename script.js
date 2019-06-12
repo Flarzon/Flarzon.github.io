@@ -141,11 +141,11 @@ jQuery(function($) {
 
             function resize() {
                 if ((container.width() / container.height()) < (img_dom.width / img_dom.height)) {
-                    img.width('60%');
+                    img.width('50%');
                     img.height('50%');
                     return;
                 }
-                img.width('60%');
+                img.width('50%');
                 img.height('50%');
             }
         }
