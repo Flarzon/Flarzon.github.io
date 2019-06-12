@@ -238,4 +238,4 @@ function get_name_browser() {
 
 // пример использования
 var browser = get_name_browser();
-if (browser == 'Safari' && $(window).height() > 1100) document.getElementById('thirdPageText').style.fontSize = '1rem';
+if (browser == 'Safari' && $(window).height() > 1100) document.getElementById('secondPageTopBlockText').style.fontSize = '1rem';
