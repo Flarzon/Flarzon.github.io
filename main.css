@@ -680,7 +680,7 @@ LEVEL 4. SETTINGS
   position: relative;
   display: flex;
   width: 90%;
-  font-size: 2.3rem;
+  font-size: 2vw;
   text-overflow: ellipsis; }
 
 .titleCenterer {
@@ -697,7 +697,7 @@ LEVEL 4. SETTINGS
   line-height: 1.5;
   width: 60%;
   padding: 5%;
-  font-size: 1.2rem;
+  font-size: 1vw;
   position: relative;
   box-sizing: border-box;
   text-align: justify;
@@ -711,7 +711,7 @@ LEVEL 4. SETTINGS
   padding: 5%;
   text-align: justify;
   width: 100%;
-  font-size: 1.2rem;
+  font-size: 1vw;
   font-weight: 600; }
 
 .secondPageBottomBlockContainer {
@@ -856,7 +856,7 @@ LEVEL 4. SETTINGS
   font-family: 'Montserrat Italic';
   margin-top: 7%;
   color: #485058;
-  font-size: 2.4rem; }
+  font-size: 2vmax; }
 
 .titleHeaderWithMargin {
   margin-left: 20px;
@@ -867,7 +867,7 @@ LEVEL 4. SETTINGS
   text-transform: uppercase;
   color: black;
   font-family: 'Montserrat Italic';
-  font-size: 2.4rem;
+  font-size: 2vmax;
   color: #485058; }
 
 .newPage #titleHeaderLine {
@@ -895,7 +895,7 @@ LEVEL 4. SETTINGS
   position: relative;
   display: flex;
   width: 90%;
-  font-size: 2.4rem;
+  font-size: 2vw;
   text-overflow: ellipsis;
   margin-left: 3vmax; }
 
@@ -904,7 +904,7 @@ LEVEL 4. SETTINGS
   display: flex;
   margin: 0 0 2vmax 3vmax;
   flex-direction: row;
-  font-size: 2.4rem;
+  font-size: 2vw;
   color: #485058; }
 
 .fourthPageText {
@@ -928,7 +928,7 @@ LEVEL 4. SETTINGS
   color: #485058;
   line-height: 1.5;
   margin-left: 3vmax;
-  font-size: 1.2rem;
+  font-size: 1vw;
   font-weight: 600; }
 
 .containerS {
@@ -1141,7 +1141,7 @@ LEVEL 4. SETTINGS
   margin-top: 2vh;
   font-weight: 600;
   color: #434343aa;
-  font-size: 1.2rem; }
+  font-size: 1vmax; }
 
 .leadPic {
   width: 30%;
@@ -1609,12 +1609,6 @@ LEVEL 4. SETTINGS
   .secondPageTabletGrid {
     height: 100%;
     font-size: 1.7rem; }
-  .titleHeaderWithMargin {
-    font-size: 3.5rem; }
-  .newPage .titleHeader {
-    font-size: 3.5rem; }
-  #secondpageBlockTitle {
-    font-size: 3.5rem; }
   #linkedin {
     width: 200%;
     height: 200%;
@@ -1622,7 +1616,7 @@ LEVEL 4. SETTINGS
   .secondPageTopBlockText,
   .thirdPageText,
   .fourthPageSmallText {
-    font-size: 3rem; }
+    font-size: 3.5rem; }
   .thirdPageTextBlock {
     font-size: 1rem; }
   .thirdPageContainer {
