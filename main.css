@@ -125,7 +125,10 @@ body {
   display: flex;
   flex-direction: column;
   flex: auto;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
 
 .bgVideo {
   display: block;
@@ -697,7 +700,7 @@ LEVEL 4. SETTINGS
   line-height: 1.5;
   width: 60%;
   padding: 5%;
-  font-size: 1vw;
+  font-size: 1.2rem;
   position: relative;
   box-sizing: border-box;
   text-align: justify;
@@ -711,7 +714,7 @@ LEVEL 4. SETTINGS
   padding: 5%;
   text-align: justify;
   width: 100%;
-  font-size: 1vw;
+  font-size: 1.2rem;
   font-weight: 600; }
 
 .secondPageBottomBlockContainer {
@@ -928,7 +931,7 @@ LEVEL 4. SETTINGS
   color: #485058;
   line-height: 1.5;
   margin-left: 3vmax;
-  font-size: 1vw;
+  font-size: 1.2rem;
   font-weight: 600; }
 
 .containerS {
