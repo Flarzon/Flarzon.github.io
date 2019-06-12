@@ -697,7 +697,7 @@ LEVEL 4. SETTINGS
   line-height: 1.5;
   width: 60%;
   padding: 5%;
-  font-size: 1.2rem;
+  font-size: 1vmax;
   position: relative;
   box-sizing: border-box;
   text-align: justify;
@@ -711,7 +711,7 @@ LEVEL 4. SETTINGS
   padding: 5%;
   text-align: justify;
   width: 100%;
-  font-size: 1.2rem;
+  font-size: 1vmax;
   font-weight: 600; }
 
 .secondPageBottomBlockContainer {
@@ -928,7 +928,7 @@ LEVEL 4. SETTINGS
   color: #485058;
   line-height: 1.5;
   margin-left: 3vmax;
-  font-size: 1.2rem;
+  font-size: 1vmax;
   font-weight: 600; }
 
 .containerS {
@@ -1397,10 +1397,10 @@ LEVEL 4. SETTINGS
   .secondPageTopBlockText,
   .thirdPageText {
     line-height: 1.5;
-    font-size: 1.2rem; }
+    font-size: 1vmax; }
   .secondPageBottomBlockText {
     line-height: 1.5;
-    font-size: 1.2rem; }
+    font-size: 1vmax; }
   .secondPageBottomBlock {
     flex-direction: column; }
   .secondPageRightBottomBlock {
@@ -1411,14 +1411,14 @@ LEVEL 4. SETTINGS
     height: 45%; }
   .fourthPageText {
     line-height: 1.5;
-    font-size: 1.2rem; }
+    font-size: 1vmax; }
   .thirdPageContainer {
     margin-top: 4vh; }
   .secondPageBottomBlockPicture {
     width: 100%; }
   .leadText {
     line-height: 1.5;
-    font-size: 1.2rem;
+    font-size: 1vmax;
     padding: 0 5% 5% 5%; }
   .sixthPageBlock {
     font-size: 1.4rem;
@@ -1461,7 +1461,7 @@ LEVEL 4. SETTINGS
   .leadText {
     font-size: 1rem; }
   .sixthPageBlock {
-    font-size: 1.2rem; }
+    font-size: 1vmax; }
   #linkedin {
     width: 50%;
     height: 50%;
