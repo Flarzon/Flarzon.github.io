@@ -1613,10 +1613,6 @@ LEVEL 4. SETTINGS
     width: 200%;
     height: 200%;
     border-radius: 100px; }
-  .secondPageTopBlockText,
-  .thirdPageText,
-  .fourthPageSmallText {
-    font-size: 3.5rem; }
   .card-inner {
     height: 40vmin; }
   .thirdPageTextBlock {
@@ -1713,5 +1709,4 @@ LEVEL 4. SETTINGS
   .secondPageTopBlockText,
   .thirdPageText,
   .fourthPageSmallText {
-    font-size: 3.5rem;
     max-height: 500px; } }
