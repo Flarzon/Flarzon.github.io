@@ -1608,13 +1608,13 @@ LEVEL 4. SETTINGS
     height: 100%;
     font-size: 1.7rem; }
   #linkedin {
-    width: 200%;
-    height: 200%;
+    width: 180%;
+    height: 180%;
     border-radius: 100px; }
   .secondPageTopBlockText,
   .thirdPageText,
   .fourthPageSmallText {
-    font-size: 3.5rem; }
+    font-size: 2.5rem; }
   .card-inner {
     height: 40vmin; }
   .thirdPageTextBlock {
@@ -1626,7 +1626,7 @@ LEVEL 4. SETTINGS
   .fourthPageText {
     font-size: 2.5rem; }
   #fourthPageBlockTitle {
-    font-size: 3.5rem; }
+    font-size: 2vw; }
   .leadText {
     font-size: 2.5rem; }
   .leadTitle {
@@ -1695,5 +1695,5 @@ LEVEL 4. SETTINGS
   .secondPageTopBlockText,
   .thirdPageText,
   .fourthPageSmallText {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     max-height: 500px; } }
