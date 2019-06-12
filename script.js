@@ -173,7 +173,7 @@ jQuery(function($) {
                     img.height('100%');
                     return;
                 }
-                img.width('10vmin');
+                img.width('7vmin');
                 img.height('100%');
             }
         }

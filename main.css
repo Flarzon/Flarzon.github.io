@@ -642,7 +642,7 @@ LEVEL 4. SETTINGS
 
 .secondPageTopLeftPicture {
   height: 50%;
-  width: 60%;
+  width: 30%;
   background-size: cover;
   display: flex;
   background-size: 100% 85%;
@@ -654,7 +654,7 @@ LEVEL 4. SETTINGS
 
 .secondPageTopRightPicture {
   height: 40%;
-  width: 50%;
+  width: 30%;
   margin-top: 5%;
   padding: 0 20px;
   background-size: 100% 90%;
@@ -680,7 +680,7 @@ LEVEL 4. SETTINGS
   position: relative;
   display: flex;
   width: 90%;
-  font-size: 3vw;
+  font-size: 2vw;
   text-overflow: ellipsis; }
 
 .titleCenterer {
@@ -696,21 +696,23 @@ LEVEL 4. SETTINGS
   font-family: 'Montserrat Italic';
   line-height: 1.5;
   width: 60%;
-  padding: 0 20px;
-  font-size: 1.3vw;
+  padding: 5%;
+  font-size: 1vw;
   position: relative;
   box-sizing: border-box;
-  text-align: justify; }
+  text-align: justify;
+  font-weight: 600; }
 
 .thirdPageText {
   font-family: 'Montserrat Italic';
   height: 25%;
   line-height: 1.5;
   position: relative;
-  padding: 0 20px;
+  padding: 5%;
   text-align: justify;
   width: 100%;
-  font-size: 1.3vw; }
+  font-size: 1vw;
+  font-weight: 600; }
 
 .secondPageBottomBlockContainer {
   height: 40%;
@@ -752,7 +754,8 @@ LEVEL 4. SETTINGS
   background-repeat: no-repeat;
   background-position-x: 50%;
   background-position-y: 100%;
-  color: #555555; }
+  color: #555555;
+  margin-top: 2vmin; }
 
 .cardContainer {
   display: flex;
@@ -853,7 +856,7 @@ LEVEL 4. SETTINGS
   font-family: 'Montserrat Italic';
   margin-top: 7%;
   color: #485058;
-  font-size: 3vmax; }
+  font-size: 2vmax; }
 
 .titleHeaderWithMargin {
   margin-left: 20px;
@@ -864,7 +867,7 @@ LEVEL 4. SETTINGS
   text-transform: uppercase;
   color: black;
   font-family: 'Montserrat Italic';
-  font-size: 3vmax;
+  font-size: 2vmax;
   color: #485058; }
 
 .newPage #titleHeaderLine {
@@ -892,7 +895,7 @@ LEVEL 4. SETTINGS
   position: relative;
   display: flex;
   width: 90%;
-  font-size: 3vw;
+  font-size: 2vw;
   text-overflow: ellipsis;
   margin-left: 3vmax; }
 
@@ -901,7 +904,7 @@ LEVEL 4. SETTINGS
   display: flex;
   margin: 0 0 2vmax 3vmax;
   flex-direction: row;
-  font-size: 3vw;
+  font-size: 2vw;
   color: #485058; }
 
 .fourthPageText {
@@ -913,7 +916,7 @@ LEVEL 4. SETTINGS
 
 .fourthPagePic {
   display: flex;
-  padding: 0 2% 10% 2%;
+  padding: 0 2% 5% 2%;
   width: 100vw;
   justify-content: center; }
 
@@ -924,7 +927,9 @@ LEVEL 4. SETTINGS
 .fourthPageSmallText {
   color: #485058;
   line-height: 1.5;
-  margin-left: 3vmax; }
+  margin-left: 3vmax;
+  font-size: 1vw;
+  font-weight: 600; }
 
 .containerS {
   margin: 0 auto;
@@ -1093,11 +1098,12 @@ LEVEL 4. SETTINGS
   display: flex; }
 
 .fifthPagePicture {
-  width: 50%;
+  width: 30%;
   max-height: 75vh;
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  margin-left: 10%; }
 
 .fifthPageRightBlock {
   display: flex;
@@ -1120,7 +1126,7 @@ LEVEL 4. SETTINGS
   justify-content: center;
   font-family: 'Arial';
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 1rem;
   line-height: 1.5;
   padding-left: 2vw; }
 
@@ -1134,11 +1140,12 @@ LEVEL 4. SETTINGS
   padding: 0 5% 0 25%;
   margin-top: 2vh;
   font-weight: 600;
-  color: #434343aa; }
+  color: #434343aa;
+  font-size: 1vmax; }
 
 .leadPic {
-  width: 50%;
-  padding-left: 25%;
+  width: 30%;
+  padding-left: 35%;
   margin-bottom: 10px; }
 
 .sixthPageBackground {
