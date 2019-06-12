@@ -1708,3 +1708,10 @@ LEVEL 4. SETTINGS
     padding-right: 3vmax; }
   .fifthPageLeadContainer {
     margin-right: 3vmax; } }
+
+@media screen and (min-height: 1300px) and (min-width: 1300px) and (max-width: 9999999px) and (max-height: 9999999px) {
+  .secondPageTopBlockText,
+  .thirdPageText,
+  .fourthPageSmallText {
+    font-size: 3.5rem;
+    max-height: 500px; } }
