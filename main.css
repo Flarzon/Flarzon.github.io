@@ -681,7 +681,7 @@ LEVEL 4. SETTINGS
   position: relative;
   display: flex;
   width: 90%;
-  font-size: 2.3rem;
+  font-size: 2vw;
   text-overflow: ellipsis; }
 
 .titleCenterer {
@@ -856,7 +856,7 @@ LEVEL 4. SETTINGS
   font-family: 'Montserrat Italic';
   margin-top: 7%;
   color: #485058;
-  font-size: 2.4rem; }
+  font-size: 2vmax; }
 
 .titleHeaderWithMargin {
   margin-left: 20px;
@@ -867,7 +867,7 @@ LEVEL 4. SETTINGS
   text-transform: uppercase;
   color: black;
   font-family: 'Montserrat Italic';
-  font-size: 2.4rem;
+  font-size: 2vmax;
   color: #485058; }
 
 .newPage #titleHeaderLine {
@@ -895,7 +895,7 @@ LEVEL 4. SETTINGS
   position: relative;
   display: flex;
   width: 90%;
-  font-size: 2.4rem;
+  font-size: 2vw;
   text-overflow: ellipsis;
   margin-left: 3vmax; }
 
@@ -904,7 +904,7 @@ LEVEL 4. SETTINGS
   display: flex;
   margin: 0 0 2vmax 3vmax;
   flex-direction: row;
-  font-size: 2.4rem;
+  font-size: 2vw;
   color: #485058; }
 
 .fourthPageText {
@@ -923,6 +923,9 @@ LEVEL 4. SETTINGS
 #optionsPic {
   transition: .3s;
   cursor: default; }
+
+#optionsPic:hover {
+  transform: scale(1.1); }
 
 .fourthPageSmallText {
   color: #485058;
@@ -1141,7 +1144,7 @@ LEVEL 4. SETTINGS
   margin-top: 2vh;
   font-weight: 600;
   color: #434343aa;
-  font-size: 1.2rem; }
+  font-size: 1vmax; }
 
 .leadPic {
   width: 30%;
@@ -1602,17 +1605,15 @@ LEVEL 4. SETTINGS
     font-size: 2.5rem; } }
 
 @media screen and (min-width: 1300px) and (min-height: 1000px) {
+  .homePage .smallLine {
+    font-size: 2vmin; }
+  .homePage .homeTitle {
+    font-size: 3vmin; }
   .secondPageTopBlockPicture {
     height: 100%; }
   .secondPageTabletGrid {
     height: 100%;
     font-size: 1.7rem; }
-  .titleHeaderWithMargin {
-    font-size: 3.5rem; }
-  .newPage .titleHeader {
-    font-size: 3.5rem; }
-  #secondpageBlockTitle {
-    font-size: 3.5rem; }
   #linkedin {
     width: 180%;
     height: 180%;
